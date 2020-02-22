@@ -9,9 +9,6 @@ class RightBar extends Component {
         return (
             <div className={"right-bar"}>
                 <div className={"search-icon-container"}>
-                    <FiHeart size={18} color={'#3f3f3f'} />
-                </div>
-                <div className={"search-icon-container"}>
                     <FiUser size={18} color={'#3f3f3f'} />
                 </div>
                 <div className={"search-icon-container"}>

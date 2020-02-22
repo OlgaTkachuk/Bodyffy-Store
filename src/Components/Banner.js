@@ -8,18 +8,8 @@ class Banner extends Component {
             <section>
                 <div className={"sections"}>
                     <div className={"container"}>
-                        <img src={banner1} className={'banner-img'}/>
-                        <div className={"banner-white-card"}>
-                            <article className={"article-white-card"}>
-                                <div className={"white-card-title"}>
-                                <h2>Discover Premium Cosmetics</h2>
-                                </div>
-                                <div className={"white-card-par"}>
-                                <p>Lorem ipsum dolor sit amet, sonet nostrud sit ne. Est eu solum facete. </p>
-                                </div>
-                                <Link to="/" className={"link-white-card"}><p>Show more</p></Link>
-                            </article>
-                        </div>
+                        <div className={'banner-img'}/>
+                        {this.props.children}
                     </div>
                 </div>
 

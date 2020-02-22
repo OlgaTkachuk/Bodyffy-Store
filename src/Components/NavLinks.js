@@ -45,7 +45,7 @@ class NavLinks extends Component {
                         </div>
                         <ul className={this.state.isOpen ? "nav-links show-mob-nav justify-right" : "nav-links"}>
                             <li>
-                                <NavLink exact to="/" activeClassName="active">Косметика</NavLink>
+                                <NavLink exact to="/cosmetics" activeClassName="active">Косметика</NavLink>
                             </li>
                             <li>
                                 <NavLink exact to="/about" activeClassName="active">Спортивне харчування</NavLink>

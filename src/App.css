@@ -26,7 +26,7 @@ button:focus, .logo:focus {
 }
 
 body {
-    border-top: 4px solid #81d8d0;
+    border-top: 4px solid #569EB6;
 }
 
 /*Navbar*/
@@ -88,7 +88,8 @@ body {
     right: 0;
     padding-top: 20px;
     background-color: white;
-    position: absolute;
+    position: fixed;
+    bottom: 0;
     z-index: 2;
     transition-duration: .8s;
     transition-timing-function: ease;
@@ -128,7 +129,7 @@ body {
 
     .nav-links li:hover a {
         cursor: pointer;
-        border-bottom: 2px solid #81d8d0;
+        border-bottom: 2px solid #569EB6;
         transition: color 0.3s;
     }
 }
@@ -176,10 +177,10 @@ body {
 
 /*SEARCH BAR*/
 .logo {
-    max-height: 30px;
+    max-height: 25px;
     flex: 4;
     overflow-x: auto;
-    margin-top: 10px;
+    margin-top: 15px;
 }
 
 .header-wrapper {
@@ -197,7 +198,7 @@ body {
 }
 
 .search-bar:hover input {
-    border-bottom: 1px solid #81d8d0;
+    border-bottom: 1px solid #569EB6;
     min-width: 250px;
 }
 
@@ -243,7 +244,7 @@ body {
     }
 
     .search-container input {
-        border-bottom: 1px solid #81d8d0;
+        border-bottom: 1px solid #569EB6;
         transition: color 0.3s, background 0.3s;
         width: 60vw;
     }
@@ -264,6 +265,8 @@ body {
 
 .banner-img {
     width: 99vw;
+    background-color: #569EB6;
+    height: 90vh;
 }
 
 .hovering-search-container {
@@ -273,7 +276,6 @@ body {
     opacity: 0.97;
     width: 100vw;
     height: 50vh;
-    top: 4px;
 }
 
 .search-bar-focus {
@@ -334,43 +336,49 @@ button:hover {
         display: none;
     }
 
-    .search-bar-focus{
+    .search-bar-focus {
         margin-left: 5vw;
     }
+
     .suggestions {
         padding: 0 30px;
     }
 }
 
-.container, .container-fluid{
+.container, .container-fluid {
     margin: 3rem auto 3rem auto;
 }
 
-section{
+section {
     overflow-x: hidden;
     position: relative;
 }
 
-.sections .container{
+.sections .container {
     margin: 0px auto;
+    overflow-y: hidden;
+    overflow-x: hidden;
 }
 
 .banner-white-card {
     background-color: white;
     position: absolute;
-    right: 8vw;
+    right: 5vw;
     top: 5vw;
 }
+
 .article-white-card {
     margin: 30px;
 }
+
 .white-card-title {
     margin: auto auto 20px;
     font-size: 1.2rem;
     font-weight: 800;
 }
+
 .white-card-par {
-font-size: 0.875rem;
+    font-size: 0.875rem;
 }
 
 .link-white-card {
@@ -379,21 +387,110 @@ font-size: 0.875rem;
     padding: 0;
     margin: 0;
 }
-.link-white-card p{
+
+.link-white-card p {
     padding: 7px 7px 0 0;
-    border-bottom: 3px solid #81d8d0;
+    border-bottom: 3px solid #df4528;
     width: 120px;
     margin: 20px 0;
 }
+
 .link-white-card:hover {
-    color: #4b847d;
+    color: #df4528;
     transition: 0.5s;
 }
 
-@media screen and (max-width: 599px){
-    .banner-white-card
-    {
+@media screen and (max-width: 599px) {
+    .banner-white-card {
         position: relative;
         padding-left: 5vw;
     }
+}
+
+.block-menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 2rem;
+}
+
+.menu-block {
+    margin: 0 auto 20px auto;
+    width: 45vw;
+    height: 45vw;
+    background: #569EB6;
+}
+
+.block-menu-title {
+    font-size: 1.7rem;
+    margin: auto;
+    text-align: center;
+}
+
+@media screen and (max-width: 599px) {
+    .menu-block {
+        width: 100vw;
+        height: 40vh;
+        margin-top: 30px;
+    }
+
+    .block-menu {
+        margin: 0px 0 40px 0;
+    }
+}
+
+
+/*SLIDER*/
+
+.slider {
+    display: flex;
+    margin: 3% 0 1rem 0;
+}
+.slider-items {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.inactive {
+    display: none;
+}
+.active {
+    display: inline-block;
+    transition: 0.9s 0.5s;
+}
+.slide-image {
+    width: 28vw;
+}
+.back-arrow, .front-arrow {
+    padding-top: 120px;
+    color: rgba(99, 99, 99, 0.31);
+}
+.par-center {
+    font-size: 0.875rem;
+    margin: 1rem auto;
+    text-align: center;
+}
+@media screen and (max-width: 899px) and (min-width: 599px){
+    .active {
+
+    }
+}
+
+/*Footer*/
+footer {
+    margin-top: 1rem;
+}
+
+.footer {
+    text-align: center;
+    background-color: rgba(211, 211, 211, 0.05);
+    height: 20vh;
+    margin-top: 3rem;
+    padding-top: 3rem;
+    border-top: 4px solid #569EB6;
+
+}
+.footer p {
+    bottom: 10px;
+    font-size: 0.875rem;
 }
