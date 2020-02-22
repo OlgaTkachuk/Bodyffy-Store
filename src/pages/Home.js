@@ -6,6 +6,7 @@ import BlockMenu from "../Components/BlockMenu";
 import Slider from "../Components/Slider";
 import Footer from "../Components/Footer";
 import WhiteCard1 from "../Components/WhiteCard1";
+import Slider1 from "../Components/Slider1";
 
 
 class Home extends Component {
@@ -16,13 +17,13 @@ class Home extends Component {
                 <NavLinks/>
                 <Banner><WhiteCard1 title={'Discover premium cosmetics'} par={'bla bla bla bla bla bla '}/></Banner>
                 <BlockMenu/>
-                <Slider/>
+                <Slider1/>
                 <div className={'container'}>
-                <Banner/>
+                    <Banner/>
                 </div>
                 <Banner/>
-                <Slider/>
-                <Slider/>
+                <Slider1/>
+                <Slider1/>
                 <Footer/>
             </>
         );

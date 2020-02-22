@@ -17,7 +17,7 @@ export default class Slider extends Component {
         let index = this.state.activeIndex;
         let length = this.state.length;
         if (index < 1) {
-            index = length - 1;
+            index = length - 3;
         }
         else {
             index--;

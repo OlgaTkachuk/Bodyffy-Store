@@ -1,18 +1,17 @@
 import React, {Component} from 'react';
 import Header from "../Components/Header";
 import Footer from "../Components/Footer";
-import BlockMenu from "../Components/BlockMenu";
 import NavLinks from "../Components/NavLinks";
 import ItemsCollection from "../Components/ItemsCollection";
 import PageCategories from "../Components/PageCategories";
 
-class Cosmetics extends Component {
+class Vitamins extends Component {
     render() {
         return (
             <div>
                 <Header/>
                 <NavLinks/>
-                <PageCategories cat_title={"Косметика"}/>
+                <PageCategories cat_title={"Вітаміни та дієтичні додатки"}/>
                 <ItemsCollection/>
                 <Footer/>
             </div>
@@ -20,4 +19,4 @@ class Cosmetics extends Component {
     }
 }
 
-export default Cosmetics;
+export default Vitamins;

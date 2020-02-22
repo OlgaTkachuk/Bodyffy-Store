@@ -8,7 +8,8 @@ class LeftArrow extends Component {
         return (
             <div>
                 <div className='back-arrow' onClick={this.props.goToPrevSlide}>
-                    <FiChevronLeft size={85}/>
+                    <FiChevronLeft size={40} className={(this.props.n === 2) ? '' : 'hide'}/>
+                    <FiChevronLeft size={85} className={(this.props.n === 2) ? 'hide' : ''}/>
                 </div>
             </div>
         );

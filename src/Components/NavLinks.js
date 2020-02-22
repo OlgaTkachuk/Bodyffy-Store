@@ -48,13 +48,13 @@ class NavLinks extends Component {
                                 <NavLink exact to="/cosmetics" activeClassName="active">Косметика</NavLink>
                             </li>
                             <li>
-                                <NavLink exact to="/about" activeClassName="active">Спортивне харчування</NavLink>
+                                <NavLink exact to="/sport" activeClassName="active">Спортивне харчування</NavLink>
                             </li>
                             <li>
-                                <NavLink exact to="/custom" activeClassName="active">Вітаміни</NavLink>
+                                <NavLink exact to="/vitamins" activeClassName="active">Вітаміни</NavLink>
                             </li>
                             <li>
-                                <NavLink exact to="/contacts"
+                                <NavLink exact to="/medical"
                                          activeClassName="active">Медичні аксесуари</NavLink>
                             </li>
                         </ul>
