@@ -11,7 +11,7 @@ export default class Slider1 extends Component {
         this.state = {
             data: slider_data,
             slider: [],
-            n: window.innerWidth < 760 ? 2 : 3
+            n: window.innerWidth < 760 ? 1 : 3
         };
     }
 
@@ -25,7 +25,7 @@ export default class Slider1 extends Component {
     }
 
     resize() {
-        window.innerWidth <= 760 ? this.setState({n: 2}) : this.setState({n: 3})
+        window.innerWidth <= 760 ? this.setState({n: 1}) : this.setState({n: 3})
     }
 
     goToNextSlide() {

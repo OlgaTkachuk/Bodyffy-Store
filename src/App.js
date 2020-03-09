@@ -1,6 +1,6 @@
 import React , { Component } from 'react';
 import Home from './pages/Home'
-import {Route, Switch} from 'react-router-dom'
+import {Route, Switch,  useParams} from 'react-router-dom'
 import './App.css';
 import Cosmetics from "./pages/Cosmetics";
 import Sport from "./pages/Sport";
@@ -8,9 +8,11 @@ import Vitamins from "./pages/Vitamins";
 import Medical from "./pages/Medical";
 import Signin from "./pages/Signin";
 import Register from "./pages/Register";
+import ItemPage from "./pages/ItemPage";
 
 
 class App extends Component {
+
     render() {
         return (
             <Switch>
@@ -19,6 +21,7 @@ class App extends Component {
                 <Route exact path="/sport" component={Sport}/>
                 <Route exact path="/vitamins" component={Vitamins}/>
                 <Route exact path="/medical" component={Medical}/>
+                <Route exact path="/item/:slug" component={ItemPage}/>
                 <Route exact path="/account/signin" component={Signin}/>
                 <Route exact path="/account/register" component={Register}/>
                 <Route component={Error}/>

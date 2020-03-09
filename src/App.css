@@ -477,6 +477,9 @@ section {
 .slide-image {
     width: 28vw;
 }
+.slide-image:hover {
+    cursor: pointer;
+}
 
 .back-arrow, .front-arrow {
     padding-top: 23vh;
@@ -491,11 +494,11 @@ section {
 
 @media screen and (max-width: 760px) {
     .back-arrow, .front-arrow {
-        padding-top: 6vh;
+        padding-top: 16vh;
     }
 
     .slide-image {
-        width: 34vw
+        width: 75vw
     }
 
 }
@@ -540,7 +543,9 @@ footer {
     width: 22vw;
     margin: 5px;
 }
-
+.item-img:hover {
+    cursor: pointer;
+}
 @media screen and (max-width: 899px) {
     .item-img {
         width: 30vw;
@@ -592,4 +597,76 @@ footer {
         width: 80vw;
         height: 20vh;
     }
+}
+
+.sign-in-block  {
+    display: flex;
+    flex-direction: column;
+    flex: 1 50%;
+    padding: 5% 10%;
+}
+.register-block {
+    display: flex;
+    padding: 5% 10%;
+    flex-direction: column;
+    flex: 1 50%;
+}
+.form-wrapper  {
+    display: flex;
+    flex-direction: column;
+}
+.register-wrapper-outer  {
+    width: 45vw;
+    margin: auto;
+}
+
+.form-header-register {
+    width: 45vw;
+    margin: auto;
+}
+@media screen and (max-width: 599px) {
+    .register-wrapper-outer{
+        width: 80vw;
+    }
+}
+
+.form {
+    display: flex;
+}
+
+@media screen and (max-width: 599px){
+    .sign-in-block {
+        flex: 1 100%
+    }
+    .form {
+        flex-wrap: wrap;
+    }
+    .register-block {
+        flex: 1 100%
+    }
+}
+
+.form-title {
+    font-size: 1.7rem;
+    line-height: 40px;
+
+}
+
+.input-field {
+    vertical-align: bottom;
+    position: relative;
+    margin: 16px 0 24px;
+    line-height: 24px;
+    border-bottom: 1px solid black;
+}
+.form-header {
+    margin-bottom: 20px;
+}
+
+.button-form {
+    background-color: #569EB6;
+    padding: 19.5px 24px;
+    color: white;
+    font-size: 0.875rem;
+    text-decoration: none;
 }

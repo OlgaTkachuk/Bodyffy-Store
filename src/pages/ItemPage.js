@@ -1,21 +1,19 @@
 import React, {Component} from 'react';
 import Header from "../Components/Header";
-import NavLinks from "../Components/NavLinks";
-import RegisterPageForm from "../Components/RegisterPageForm";
 import Footer from "../Components/Footer";
+import NavLinks from "../Components/NavLinks";
 
-class Register extends Component {
-
+class ItemPage extends Component {
     render() {
         return (
             <div>
                 <Header/>
                 <NavLinks/>
-                <RegisterPageForm/>
+                item page
                 <Footer/>
             </div>
         );
     }
 }
 
-export default Register;
+export default ItemPage;

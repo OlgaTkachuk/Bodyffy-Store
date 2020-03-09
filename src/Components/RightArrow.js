@@ -9,8 +9,8 @@ class RightArrow extends Component {
         return (
             <div>
                 <div className='front-arrow' onClick={this.props.goToNextSlide}>
-                    <FiChevronRight size={40} className={(this.props.n === 2) ? '' : 'hide'}/>
-                    <FiChevronRight size={85} className={(this.props.n === 2) ? 'hide' : ''}/>
+                    <FiChevronRight size={40} className={(this.props.n === 1) ? '' : 'hide'}/>
+                    <FiChevronRight size={85} className={(this.props.n === 1) ? 'hide' : ''}/>
                 </div>
             </div>
         );
