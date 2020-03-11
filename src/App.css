@@ -491,7 +491,10 @@ section {
     margin: 1rem auto;
     text-align: center;
 }
-
+.slide-image-wider {
+    width: 38vw;
+    margin: auto;
+}
 @media screen and (max-width: 760px) {
     .back-arrow, .front-arrow {
         padding-top: 16vh;
@@ -669,4 +672,48 @@ footer {
     color: white;
     font-size: 0.875rem;
     text-decoration: none;
+    text-align: center;
+}
+
+.item-block {
+    display: flex;
+    flex-wrap: wrap;
+}
+.photo-block{
+    flex: 50% 1
+}
+.descr-block {
+    flex: 30% 2;
+    padding: 3.5vw 7% 0;
+}
+.item-title {
+    font-size: 2rem;
+    line-height: 1.25;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    max-width: 400px;
+}
+.item-page-price {
+    line-height: 2;
+    font-size: 1rem;
+}
+.item-page-button {
+    width: 400px;
+    min-width: 300px;
+    display: flex;
+    justify-content: space-between;
+    padding: 14px 20px;
+    align-items: center;
+    font-size: 1rem;
+}
+
+.item-page-text {
+    max-width: 400px;
+    margin: 16px 0;
+    font-size: 0.875rem;
+
+}
+
+.block-wrapper {
+    margin: 3rem auto auto auto;
 }

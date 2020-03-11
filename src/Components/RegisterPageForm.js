@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+// import waist from '../images/waist.svg'
 
 class RegisterPageForm extends Component {
     constructor(props) {
@@ -33,6 +34,7 @@ class RegisterPageForm extends Component {
 
     render() {
         return (
+            <>
             <div>
                 <div className={'sign-in-block'}>
                     <div className={'form-header-register'}>
@@ -63,6 +65,8 @@ class RegisterPageForm extends Component {
                     </div>
                 </div>
             </div>
+            {/*<div><img src={waist} className={'waist-pic'}/></div>*/}
+            </>
         );
     }
 }

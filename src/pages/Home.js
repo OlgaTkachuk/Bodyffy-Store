@@ -17,12 +17,18 @@ class Home extends Component {
                 <NavLinks/>
                 <Banner><WhiteCard1 title={'Discover premium cosmetics'} par={'bla bla bla bla bla bla '}/></Banner>
                 <BlockMenu/>
+                <div className={'block-menu-title'}> <h3>New Arrivals</h3></div>
+                <div className='par-center'> <p>Explore our newest products</p></div>
                 <Slider1/>
                 <div className={'container'}>
                     <Banner/>
                 </div>
                 <Banner/>
+                <div className={'block-menu-title'}> <h3>New Arrivals</h3></div>
+                <div className='par-center'> <p>Explore our newest products</p></div>
                 <Slider1/>
+                <div className={'block-menu-title'}> <h3>New Arrivals</h3></div>
+                <div className='par-center'> <p>Explore our newest products</p></div>
                 <Slider1/>
                 <Footer/>
             </>

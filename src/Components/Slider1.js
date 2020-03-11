@@ -11,7 +11,7 @@ export default class Slider1 extends Component {
         this.state = {
             data: slider_data,
             slider: [],
-            n: window.innerWidth < 760 ? 1 : 3
+            n: (window.innerWidth < 760 || props.nnn === 1 ) ? 1 : 3
         };
     }
 
@@ -25,7 +25,7 @@ export default class Slider1 extends Component {
     }
 
     resize() {
-        window.innerWidth <= 760 ? this.setState({n: 1}) : this.setState({n: 3})
+        (window.innerWidth <= 760 || this.props.nnn === 1) ? this.setState({n: 1}) : this.setState({n: 3})
     }
 
     goToNextSlide() {
@@ -84,13 +84,11 @@ export default class Slider1 extends Component {
         let n = this.state.n;
         return (
             <div className="container">
-                <div className={'block-menu-title'}> <h3>New Arrivals</h3></div>
-                <div className='par-center'> <p>Explore our newest products</p></div>
                 <div className='slider'>
                     <div className='slider-items'>
                         <LeftArrow n={n} goToPrevSlide={() => this.goToPrevSlide()}/>
                         <div>
-                            <Slide1 slider={this.state.slider}/>
+                            <Slide1 n={n} slider={this.state.slider}/>
                         </div>
                         <RightArrow n={n} goToNextSlide={() => this.goToNextSlide()}/>
                     </div>
