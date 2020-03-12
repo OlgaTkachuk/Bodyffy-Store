@@ -16,7 +16,9 @@ class RightBar extends Component {
 
                 </div>
                 <div className={"search-icon-container"}>
+                    <NavLink exact to="/shoppingcart/new">
                     <FiShoppingCart size={18} color={'#3f3f3f'}/>
+                    </NavLink>
                 </div>
             </div>
         );

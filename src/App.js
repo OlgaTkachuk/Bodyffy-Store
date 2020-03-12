@@ -9,6 +9,7 @@ import Medical from "./pages/Medical";
 import Signin from "./pages/Signin";
 import Register from "./pages/Register";
 import ItemPage from "./pages/ItemPage";
+import ShoppingCart from "./pages/ShoppingCart";
 
 
 class App extends Component {
@@ -24,6 +25,7 @@ class App extends Component {
                 <Route exact path="/item/:slug" component={ItemPage}/>
                 <Route exact path="/account/signin" component={Signin}/>
                 <Route exact path="/account/register" component={Register}/>
+                <Route exact path="/shoppingcart/:slug" component={ShoppingCart}/>
                 <Route component={Error}/>
             </Switch>
         );

@@ -717,3 +717,20 @@ footer {
 .block-wrapper {
     margin: 3rem auto auto auto;
 }
+
+.cart-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+.cart-block-wrapper {
+    flex: 60% 1;
+}
+.summary-wrapper {
+    flex: 30% 2;
+}
+.checkout-form {
+    background-color: #f5f5f5;
+    width: 400px;
+    padding: 30px;
+    margin-top: 20px;
+}
