@@ -8,10 +8,14 @@ class DescriptionBlock extends Component {
                     <h1 className={'item-title'}>Diamond Vine Bypass Ring in Platinum</h1>
                 </div>
                 <br/>
-                <div>
-                    <p>quantity</p>
+                <div className={"quantity-bar"}>
+                    <p>Quantity:</p>
+                    <select>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                    </select>
                 </div>
-                <br/>
                 <br/>
 
                 <form><button type={'submit'} className={'button-form item-page-button'}><h3 className={'item-page-price'}>$ 1,500</h3>В корзину</button></form>
