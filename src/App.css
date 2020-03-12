@@ -721,7 +721,7 @@ footer {
 .cart-wrapper {
     display: flex;
     flex-wrap: wrap;
-    max-width: 70vw;
+    max-width: 1200px;
     margin: auto;
 }
 .cart-block-wrapper {
@@ -730,6 +730,7 @@ footer {
 }
 .summary-wrapper {
     flex: 30% 2;
+    margin: 1rem 2rem;
 }
 .checkout-form {
     background-color: #f5f5f5;
@@ -737,6 +738,20 @@ footer {
     padding: 30px;
     margin-top: 20px;
 }
+@media screen and (max-width: 1024px) {
+    .summary-wrapper {
+        flex: 50%;
+        margin: 1rem auto;
+    }
+    .cart-block-wrapper {
+        flex: 50%;
+    }
+    .checkout-form {
+        width: 90vw;
+        margin: auto;
+    }
+}
+
 .cart-title {
     border-bottom: 1px solid black;
     padding: 8px;
