@@ -1,7 +1,9 @@
 import React , { Component } from 'react';
 import Home from './pages/Home'
-import {Route, Switch,  useParams} from 'react-router-dom'
+import {Route, Switch} from 'react-router-dom'
 import './App.css';
+
+
 import Cosmetics from "./pages/Cosmetics";
 import Sport from "./pages/Sport";
 import Vitamins from "./pages/Vitamins";

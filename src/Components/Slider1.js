@@ -1,41 +1,35 @@
 import React, {Component} from 'react';
-import Slide from './Slide';
+// import * as actionTypes from '../store/actions'
 import slider_data from '../data/slider_data1';
 import LeftArrow from './LeftArrow';
 import RightArrow from './RightArrow';
 import Slide1 from "./Slide1";
+import {connect} from 'react-redux'
 
-export default class Slider1 extends Component {
+class Slider1 extends Component {
     constructor(props) {
         super(props);
         this.state = {
             data: slider_data,
             slider: [],
-            n: (window.innerWidth < 760 || props.nnn === 1 ) ? 1 : 3
         };
+        this.forceUpdate = this.forceUpdate.bind(this)
     }
 
-
-    componentWillMount() {
-        this.initSlider();
-    }
     componentDidMount() {
-        window.addEventListener("resize", this.resize.bind(this));
-        this.resize();
+        this.initSlider();
+        window.addEventListener('resize', this.props.updateWindowSize(window.innerWidth))
     }
-
-    resize() {
-        (window.innerWidth <= 760 || this.props.nnn === 1) ? this.setState({n: 1}) : this.setState({n: 3})
+    componentWillUnmount() {
+        window.removeEventListener('resize', this.props.updateWindowSize(window.innerWidth))
     }
-
     goToNextSlide() {
         let data = this.state.data;
         let first = data.shift(0);
         let newslider = [];
 
         data.push(first);
-        for (let i = 0; i < this.state.n; i++)
-        {
+        for (let i = 0; i < this.props.n; i++) {
             newslider.push(data[i])
         }
 
@@ -45,15 +39,13 @@ export default class Slider1 extends Component {
         console.log(newslider);
     }
 
-
     goToPrevSlide() {
         let data = this.state.data;
         let first = data.pop();
         let newslider = [];
 
         data.unshift(first);
-        for (let i = 0; i < this.state.n; i++)
-        {
+        for (let i = 0; i < this.props.n; i++) {
             newslider.push(this.state.data[i])
         }
 
@@ -62,26 +54,23 @@ export default class Slider1 extends Component {
         })
     }
 
-
     initSlider() {
-        let n =this.state.n;
+        let n = this.props.n;
         let slider = this.state.slider;
         let data = this.state.data;
         let newslider = [];
 
-        for (let i = 0; i < n; i++)
-        {
+        for (let i = 0; i < this.props.n; i++) {
             newslider.push(data[i]);
             console.log(data, slider);
         }
         this.setState({
             slider: newslider
         });
-
     }
 
     render() {
-        let n = this.state.n;
+        let n = this.props.n;
         return (
             <div className="container">
                 <div className='slider'>
@@ -96,5 +85,32 @@ export default class Slider1 extends Component {
             </div>
         );
     }
-
 }
+
+const mapStateToProps = store => {
+    return {
+        n: store.slider_number
+    }
+};
+
+export const updateWindowSize = width => dispatch => {
+    let screen = null;
+    if (width < 600) {
+        screen = 'small';
+    } else if (width >= 600 && width < 900) {
+        screen = 'medium';
+    } else if (width >= 900) {
+        screen = 'wide';
+    }
+    dispatch({type: "UPDATING_SCREEN_WIDTH", screen});
+}
+
+const mapDispatchToProps = dispatch => {
+    return {
+        updateWindowSize: size => dispatch(updateWindowSize(size))
+    }
+}
+export default connect(
+    mapStateToProps,
+    mapDispatchToProps
+)(Slider1);

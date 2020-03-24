@@ -7,8 +7,10 @@ class ItemsCollection extends Component {
         return (
             <section>
                 <div className={'items-collection'}>
-                    <div className={'coll-wrapper'}>
-                        <ItemColl items={slider_data}/>
+                    <div className={'coll-wrapper-outer'}>
+                        <div className={'coll-wrapper'}>
+                            <ItemColl items={slider_data}/>
+                        </div>
                     </div>
                 </div>
             </section>
