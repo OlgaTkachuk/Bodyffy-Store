@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {FaBars} from 'react-icons/fa'
 import {Link, NavLink} from "react-router-dom";
-import logo from "../images/llogo.png"
+// import logo from "../images/llogo.png"
 
 
 class NavLinks extends Component {

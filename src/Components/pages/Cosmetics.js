@@ -1,10 +1,10 @@
 import React, {Component} from 'react';
-import Header from "../Components/Header";
-import Footer from "../Components/Footer";
-import BlockMenu from "../Components/BlockMenu";
-import NavLinks from "../Components/NavLinks";
-import ItemsCollection from "../Components/ItemsCollection";
-import PageCategories from "../Components/PageCategories";
+import Header from "../Header";
+import Footer from "../Footer";
+import BlockMenu from "../BlockMenu";
+import NavLinks from "../NavLinks";
+import ItemsCollection from "../ItemsCollection";
+import PageCategories from "../PageCategories";
 
 class Cosmetics extends Component {
     render() {

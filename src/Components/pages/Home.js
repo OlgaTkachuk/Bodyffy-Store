@@ -1,12 +1,12 @@
 import React, {Component} from 'react';
-import NavLinks from "../Components/NavLinks";
-import Header from "../Components/Header";
-import Banner from "../Components/Banner";
-import BlockMenu from "../Components/BlockMenu";
-import Slider from "../Components/Slider";
-import Footer from "../Components/Footer";
-import WhiteCard1 from "../Components/WhiteCard1";
-import Slider1 from "../Components/Slider1";
+import NavLinks from "../NavLinks";
+import Header from "../Header";
+import Banner from "../Banner";
+import BlockMenu from "../BlockMenu";
+import Slider from "../Slider";
+import Footer from "../Footer";
+import WhiteCard1 from "../WhiteCard1";
+import Slider1 from "../Slider1";
 
 
 class Home extends Component {

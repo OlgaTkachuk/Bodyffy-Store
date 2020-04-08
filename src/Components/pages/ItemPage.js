@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
-import Header from "../Components/Header";
-import Footer from "../Components/Footer";
-import NavLinks from "../Components/NavLinks";
-import ItemBlock from "../Components/ItemBlock";
+import Header from "../Header";
+import Footer from "../Footer";
+import NavLinks from "../NavLinks";
+import ItemBlock from "../ItemBlock";
 
 class ItemPage extends Component {
     render() {

@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
-import logo from '../images/name555.jpg'
-import NavLinks from "./NavLinks";
+import logo from '../images/logo_test.jpg'
 import {NavLink} from "react-router-dom";
 
 class Logo extends Component {
