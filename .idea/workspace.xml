@@ -2,40 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="873279fe-7677-414f-a44a-75f452ad5508" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Components/Product.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/ProductImages.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/pages/TestPage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/redux/GetProductImages/constants.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/redux/GetProductImages/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/redux/GetProductImages/reducers.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/redux/ProductDetails/actions.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/redux/ProductDetails/constants.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/redux/ProductDetails/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/redux/ProductDetails/reducers.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/redux/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Logo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Logo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/NavLinks.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/NavLinks.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/LOGO_H1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/llogo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/logo1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/logo_helvetica.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Cosmetics.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/pages/Cosmetics.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/pages/Home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/ItemPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/pages/ItemPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Medical.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/pages/Medical.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Register.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/pages/Register.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/ShoppingCart.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/pages/ShoppingCart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Signin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/pages/Signin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Sport.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/pages/Sport.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Vitamins.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/pages/Vitamins.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reducers/reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/reducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/GetProductImages/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/GetProductImages/actions.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -133,11 +101,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/redux/GetProductImages/actions.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="16" column="42" lean-forward="true" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="42" />
+            <state relative-caret-position="805">
+              <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
               <folding>
                 <element signature="e#0#84#0" expanded="true" />
               </folding>
@@ -154,7 +122,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="23">
@@ -307,10 +275,10 @@
         <option value="$PROJECT_DIR$/src/redux/GetProductImages/reducers.js" />
         <option value="$PROJECT_DIR$/src/redux/index.js" />
         <option value="$PROJECT_DIR$/src/redux/reducer.js" />
-        <option value="$PROJECT_DIR$/src/redux/GetProductImages/actions.js" />
         <option value="$PROJECT_DIR$/src/Components/Product.js" />
         <option value="$PROJECT_DIR$/src/Components/pages/TestPage.js" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/src/redux/GetProductImages/actions.js" />
       </list>
     </option>
   </component>
@@ -330,11 +298,11 @@
       <path value="$PROJECT_DIR$/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="x" value="-11" />
-    <option name="y" value="7" />
+    <option name="y" value="-11" />
     <option name="width" value="1940" />
-    <option name="height" value="1044" />
+    <option name="height" value="1100" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -477,18 +445,17 @@
       <workItem from="1584734039608" duration="38322000" />
       <workItem from="1585321385993" duration="28175000" />
       <workItem from="1585828766197" duration="10518000" />
-      <workItem from="1586280761211" duration="28952000" />
+      <workItem from="1586280761211" duration="29671000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="282397000" />
+    <option name="totallyTimeSpent" value="283116000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1295" height="735" extended-state="6" />
-    <editor active="true" />
+    <frame x="-7" y="-7" width="1293" height="733" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49817517" visible="true" weight="0.17965023" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49817517" visible="true" weight="0.1799363" />
       <window_info id="Structure" order="1" sideWeight="0.5018248" side_tool="true" weight="0.19554849" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -502,7 +469,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.23847377" side_tool="true" weight="0.1970803" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.7615262" weight="0.18210863" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.7615262" visible="true" weight="0.30546075" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -816,16 +783,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/redux/GetProductImages/actions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="16" column="42" lean-forward="true" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="42" />
-          <folding>
-            <element signature="e#0#84#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Components/pages/TestPage.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="219">
@@ -854,6 +811,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="23">
           <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/redux/GetProductImages/actions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="805">
+          <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
+          <folding>
+            <element signature="e#0#84#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

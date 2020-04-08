@@ -7,7 +7,7 @@ const getProduct = (product) => async (dispatch, getState) => {
     try {
         const response = await Client.getEntries({
             'content_type': 'bodyffyStore',
-            // 'fields.slug': product,
+
         });
         console.log(response, 'response');
         const item = response.items.filter(item =>
