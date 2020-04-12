@@ -4,12 +4,12 @@ import Product from "../Product";
 
 class TestPage extends Component {
     render() {
-        const {prodImgs, prodDetails, setProductAction, getPhotosAction} = this.props;
+        const {prodImgs, prodDetails, getProductsList, setActiveProductSlug} = this.props;
         return (
             <div>
-                <ProductImages photos={prodImgs.photos} getPhotos={getPhotosAction}/>
+                {/*<ProductImages photos={prodImgs.photos} getPhotos={getProductsList}/>*/}
                 <Product photos={prodImgs.photos} isFetching={prodImgs.isFetching} product={prodDetails.product}
-                         setProduct={setProductAction} getPhotos={() => getPhotosAction()} error={prodImgs.error}/>
+                         setActiveProductSlug={setActiveProductSlug} getProductsList={getProductsList} error={prodImgs.error}/>
             </div>
         );
     }

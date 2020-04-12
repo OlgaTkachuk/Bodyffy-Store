@@ -1,20 +1,20 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import TestPage from "../Components/pages/TestPage";
-import {setProduct} from "../redux/ProductDetails/actions";
-import {getPhotos} from "../redux/GetProductImages/actions";
+import {getPhotos} from "../redux/GetProductInfo/actions";
+import ProductService from '../redux/GetProductInfo'
+import actions from "../redux/GetProductInfo/actions";
 
 const mapStateToProps = store => {
     console.log(store)
     return {
         prodImgs: store.prodImgs,
-        prodDetails: store.prodDetails
     }
 }
 const mapDispatchToProps = dispatch => {
     return {
-        setProductAction: product => dispatch(setProduct(product)),
-        getPhotosAction: () => dispatch(getPhotos()),
+        setActiveProductSlug: product => dispatch(actions.setActiveProductSlug(product)),
+        getProductsList: () => dispatch(ProductService.getProductsList()),
     }
 }
 

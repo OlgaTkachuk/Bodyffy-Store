@@ -1,10 +1,19 @@
 import React, {Component} from 'react';
 
 class Product extends Component {
-    onBtnClick = e => {
+    // componentDidMount() {
+    //     (this.props.match.params.slug);
+    // }
+    // componentDidUpdate(prevProps) {
+    //     if (prevProps.match.params.slug !== this.props.match.params.slug) {
+    //         this.getPost(this.props.match.params.slug);
+    //     }
+    // }
+
+    onBtnClick = async e => {
         const product = e.currentTarget.innerText;
-        this.props.setProduct(product);
-        this.props.getPhotos();
+        await this.props.setActiveProductSlug(product);
+        await this.props.getProductsList(product);
     }
 
     renderTemplate = () => {
