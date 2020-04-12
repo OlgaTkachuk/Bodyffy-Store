@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="873279fe-7677-414f-a44a-75f452ad5508" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/redux/GetProductInfo/actions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/GetProductInfo/constants.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/GetProductInfo/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/Product.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Product.js" afterDir="false" />
@@ -13,9 +16,9 @@
       <change beforePath="$PROJECT_DIR$/src/Components/pages/Vitamins.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Containers/ProductPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Containers/ProductPage.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/redux/GetProductImages.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/GetProductImages/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/GetProductInfo/actions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/GetProductImages/constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/GetProductInfo/constants.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/GetProductImages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/GetProductInfo/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/GetProductImages/actions.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/GetProductImages/constants.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/GetProductImages/index.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/redux/GetProductImages/reducers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/GetProductInfo/reducers.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/redux/ProductDetails/actions.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/redux/ProductDetails/constants.js" beforeDir="false" />
@@ -61,7 +64,7 @@
           <entry key="css" value="6145" />
           <entry key="gitignore" value="23" />
           <entry key="html" value="16" />
-          <entry key="js" value="15535" />
+          <entry key="js" value="15543" />
           <entry key="ts" value="1" />
           <entry key="txt" value="27" />
         </counts>
@@ -70,7 +73,7 @@
         <counts>
           <entry key="CSS" value="6145" />
           <entry key="HTML" value="16" />
-          <entry key="JavaScript" value="15535" />
+          <entry key="JavaScript" value="15543" />
           <entry key="PLAIN_TEXT" value="50" />
           <entry key="TypeScript" value="1" />
         </counts>
@@ -168,8 +171,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Components/Product.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
-              <caret line="4" column="20" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
+            <state relative-caret-position="345">
+              <caret line="15" column="43" lean-forward="true" selection-start-line="15" selection-start-column="43" selection-end-line="15" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -443,7 +446,7 @@
       <workItem from="1585828766197" duration="10518000" />
       <workItem from="1586280761211" duration="29980000" />
       <workItem from="1586443479563" duration="14168000" />
-      <workItem from="1586680611917" duration="729000" />
+      <workItem from="1586680611917" duration="1464000" />
     </task>
     <task id="LOCAL-00001" summary="redux test">
       <created>1586365361016</created>
@@ -456,11 +459,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="298322000" />
+    <option name="totallyTimeSpent" value="299057000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-1088" width="1936" height="1096" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49817517" visible="true" weight="0.19704953" />
       <window_info id="Structure" order="1" sideWeight="0.5018248" side_tool="true" weight="0.19554849" />
@@ -785,8 +787,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Components/Product.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" column="20" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
+        <state relative-caret-position="345">
+          <caret line="15" column="43" lean-forward="true" selection-start-line="15" selection-start-column="43" selection-end-line="15" selection-end-column="43" />
         </state>
       </provider>
     </entry>
