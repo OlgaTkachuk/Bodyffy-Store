@@ -8,6 +8,8 @@ import DescriptionBlock from "./DescriptionBlock";
 import Slider1 from "./Slider1";
 import Banner from "./Banner";
 import Footer from "./Footer";
+import rightArrow from '../images/next.svg'
+import leftArrow from '../images/previous.svg'
 
 class Product extends Component {
 //     onBtnClick = async e => {
@@ -57,7 +59,7 @@ class Product extends Component {
                     <Header/>
                     <NavLinks/>
                     <div className={'item-block'}>
-                    <ProductPhotos photos={photos.flat()} isFetching={isFetching} error={error}/>
+                    <ProductPhotos photos={photos.flat()} isFetching={isFetching} error={error} rightArrow={rightArrow} leftArrow={leftArrow}/>
                     <ProductInfo title={title} category={category} price={price}/>
                         <div className={'block-wrapper'}>
                             <div className={'block-menu-title'}><h3>You May Also Like</h3></div>
