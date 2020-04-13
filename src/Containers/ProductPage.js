@@ -4,6 +4,7 @@ import TestPage from "../Components/pages/TestPage";
 import {getPhotos} from "../redux/GetProductInfo/actions";
 import ProductService from '../redux/GetProductInfo'
 import actions from "../redux/GetProductInfo/actions";
+import Product from "../Components/Product";
 
 const mapStateToProps = store => {
     console.log(store)
@@ -18,4 +19,4 @@ const mapDispatchToProps = dispatch => {
     }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(TestPage);
+export default connect(mapStateToProps, mapDispatchToProps)(Product);

@@ -475,7 +475,10 @@ section {
 }
 
 .slide-image {
-    width: 28vw;
+    max-width: 28vw;
+    max-height: 60vh;
+    margin-left: 20vw;
+    padding-top: 10vh
 }
 .slide-image:hover {
     cursor: pointer;

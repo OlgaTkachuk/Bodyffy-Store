@@ -24,12 +24,21 @@ export class ProductService {
             const item = response.items.filter(item =>
                 item.fields.slug === product
             )
+            const category = item?.map(i =>
+                i.fields?.category
+            )
+            const title = item?.map(i =>
+                i.fields?.title
+            )
+            const price = item?.map(i =>
+                i.fields?.price
+            )
             const photos = item?.map(i =>
                 i.fields?.photos?.map(image =>
                     image.fields.file.url))
 
-            await dispatch(actions.getProductSuccess({photos, item}));
-            return {item, photos};
+            await dispatch(actions.getProductSuccess({photos, item, title, category, price}));
+            return {item, photos, title, category, price};
         } catch (err) {
             await dispatch(actions.getProductFail());
             return err;
