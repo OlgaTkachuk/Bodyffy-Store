@@ -1,0 +1,4 @@
+export const GET_PRODUCT_ATTEMPT = 'products/GET_PRODUCT_ATTEMPT'
+export const GET_PRODUCT_SUCCESS = 'products/GET_PRODUCT_SUCCESS'
+export const GET_PRODUCT_FAIL = 'products/GET_PRODUCT_FAIL'
+export const SET_ACTIVE_PRODUCT_SLUG = 'products/SET_ACTIVE_PRODUCT_SLUG'

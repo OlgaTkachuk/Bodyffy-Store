@@ -26,7 +26,7 @@ button:focus, .logo:focus {
 }
 
 body {
-    border-top: 4px solid #569EB6;
+    border-top: 4px solid  #004731;
 }
 
 /*Navbar*/
@@ -105,7 +105,7 @@ body {
     }
 
     .logo {
-        max-height: 35px;
+        max-height: 30px;
     }
 
     .nav-center {
@@ -177,10 +177,10 @@ body {
 
 /*SEARCH BAR*/
 .logo {
-    max-height: 15px;
+    max-height: 50px;
     flex: 4;
     overflow-x: auto;
-    margin-top: 15px;
+    margin-top: 10px;
 }
 
 .header-wrapper {
@@ -198,7 +198,8 @@ body {
 }
 
 .search-bar:hover input {
-    border-bottom: 1px solid #569EB6;
+    /*border-bottom: 1px solid #569EB6;*/
+    border-bottom: 1px solid #004731;
     min-width: 250px;
 }
 
@@ -244,7 +245,7 @@ body {
     }
 
     .search-container input {
-        border-bottom: 1px solid #569EB6;
+        border-bottom: 1px solid #004731;
         transition: color 0.3s, background 0.3s;
         width: 60vw;
     }
@@ -265,7 +266,7 @@ body {
 
 .banner-img {
     width: 99vw;
-    background-color: #569EB6;
+    background-color:  #004731;
     height: 90vh;
 }
 
@@ -390,13 +391,13 @@ section {
 
 .link-white-card p {
     padding: 7px 7px 0 0;
-    border-bottom: 3px solid #df4528;
+    border-bottom: 3px solid #c2865c;
     width: 120px;
     margin: 20px 0;
 }
 
 .link-white-card:hover {
-    color: #df4528;
+    color: #c2865c;
     transition: 0.5s;
 }
 
@@ -418,7 +419,7 @@ section {
     margin: 0 auto 20px auto;
     width: 45vw;
     height: 45vw;
-    background: #569EB6;
+    background:  #c2865c;
 }
 
 .block-menu-title {
@@ -474,7 +475,8 @@ section {
 }
 
 .slide-image {
-    width: 28vw;
+    max-width: 28vw;
+    max-height: 60vh;
 }
 .slide-image:hover {
     cursor: pointer;
@@ -518,7 +520,7 @@ footer {
     height: 20vh;
     margin-top: 3rem;
     padding-top: 3rem;
-    border-top: 4px solid #569EB6;
+    border-top: 4px solid  #004731;
 
 }
 
@@ -587,7 +589,7 @@ footer {
     margin: 0 auto 20px auto;
     width: 22vw;
     height: 22vw;
-    background: #569EB6;
+    background:  #004731;
 }
 
 .categories-title {
@@ -675,7 +677,7 @@ footer {
 }
 
 .button-form {
-    background-color: #569EB6;
+    background-color:  #004731;
     padding: 19.5px 24px;
     color: white;
     font-size: 0.875rem;
@@ -686,9 +688,6 @@ footer {
 .item-block {
     display: flex;
     flex-wrap: wrap;
-}
-.photo-block{
-    flex: 50% 1
 }
 .descr-block {
     flex: 30% 2;
@@ -792,7 +791,7 @@ select option{
     width: 100%;
 }
 .checkout-button:hover {
-    background-color: #569EB6;
+    background-color:  #004731;
 }
 .summary-title {
     font-weight: 600;
@@ -840,4 +839,16 @@ select option{
 
 .radio-form {
     display: inline-block;
+}
+
+.slider-container {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+}
+
+.photo-block{
+    flex: 50% 1;
+    display: flex;
+    /*flex-direction: row;*/
 }

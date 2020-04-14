@@ -1,19 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {createStore,applyMiddleware} from 'redux';
 import {Provider} from 'react-redux';
-import {createLogger} from 'redux-logger'
+import {store} from './redux/index.js'
 
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
-import {reducer, initialState} from './reducers/reducer';
 import {BrowserRouter as Router} from 'react-router-dom';
-import thunk from 'redux-thunk'
-import logger from 'redux-logger'
-
-const store = createStore(reducer, initialState, applyMiddleware(logger,thunk));
 
 store.subscribe(() => {
     console.log('[Subscription]', store.getState)
