@@ -8,6 +8,7 @@ import Signin from "./Components/pages/Signin/";
 import Register from "./Components/pages/Register/";
 import ShoppingCart from "./Components/pages/ShoppingCart/";
 import ProductPage from "./Containers/ProductPage/";
+import ResponsiveSlider from "./Components/basic/ResponsiveSlider/";
 
 
 class App extends Component {
@@ -19,6 +20,7 @@ class App extends Component {
                 <Route exact path="/item/:slug" component={ProductPage}/>
                 <Route exact path="/account/signin" component={Signin}/>
                 <Route exact path="/account/register" component={Register}/>
+                <Route exact path="/slider" component={ResponsiveSlider}/>
                 <Route exact path="/shoppingcart/:slug" component={ShoppingCart}/>
                 <Route component={Error}/>
             </Switch>

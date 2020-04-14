@@ -5,9 +5,8 @@ class ProductPhotos extends Component {
         currPhotoIndex: 0
     }
     renderTemplate = () => {
-        console.log(this.props);
         const {photos, isFetching, error} = this.props
-
+        console.log(photos);
         if (error) {
             return <p className="error">Во время загрузки фото произошла ошибка</p>
         }

@@ -3,10 +3,10 @@ import NavLinks from "../../basic/NavLinks";
 import Header from "../../basic/Header";
 import Banner from "../../basic/Banner";
 import BlockMenu from "../../basic/BlockMenu";
-import Slider from "../../basic/Slider";
 import Footer from "../../basic/Footer";
 import WhiteCard1 from "../../basic/WhiteCard1";
 import Slider1 from "../../basic/Slider1";
+import ResponsiveSlider from "../../basic/ResponsiveSlider/";
 
 
 class Home extends Component {
@@ -19,17 +19,17 @@ class Home extends Component {
                 <BlockMenu/>
                 <div className={'block-menu-title'}> <h3>New Arrivals</h3></div>
                 <div className='par-center'> <p>Explore our newest products</p></div>
-                <Slider1/>
+                <ResponsiveSlider/>
                 <div className={'container'}>
                     <Banner/>
                 </div>
                 <Banner/>
                 <div className={'block-menu-title'}> <h3>New Arrivals</h3></div>
                 <div className='par-center'> <p>Explore our newest products</p></div>
-                <Slider1/>
+                <ResponsiveSlider/>
                 <div className={'block-menu-title'}> <h3>New Arrivals</h3></div>
                 <div className='par-center'> <p>Explore our newest products</p></div>
-                <Slider1/>
+                <ResponsiveSlider/>
                 <Footer/>
             </>
         );

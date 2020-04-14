@@ -3,11 +3,11 @@ import ProductPhotos from "../../basic/ProductPhotos";
 import ProductInfo from "../../basic/ProductInfo";
 import Header from "../../basic/Header";
 import NavLinks from "../../basic/NavLinks";
-import Slider1 from "../../basic/Slider1";
 import Banner from "../../basic/Banner";
 import Footer from "../../basic/Footer";
 import rightArrow from '../../../assets/images/next.svg'
 import leftArrow from '../../../assets/images/previous.svg'
+import ResponsiveSlider from "../../basic/ResponsiveSlider/";
 
 class Product extends Component {
     componentDidMount() {
@@ -34,12 +34,13 @@ class Product extends Component {
                     <div className={'item-block'}>
                     <ProductPhotos photos={photos.flat()} isFetching={isFetching} error={error} rightArrow={rightArrow} leftArrow={leftArrow}/>
                     <ProductInfo title={title} category={category} price={price}/>
-                        <div className={'block-wrapper'}>
-                            <div className={'block-menu-title'}><h3>You May Also Like</h3></div>
-                            <Slider1/>
-                            <Banner/>
-                        </div>
+                                                {/*<ResponsiveSlider/>*/}
                     </div>
+                    <div className={'block-wrapper'}>
+                    <div className={'block-menu-title'}><h3>You May Also Like</h3></div>
+                    <ResponsiveSlider photos={photos.flat()} />
+                    </div>
+                    <Banner/>
                     <Footer/>
                 </div>
             </>
