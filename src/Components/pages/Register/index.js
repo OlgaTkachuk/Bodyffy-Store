@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
-import Header from "../Header";
-import NavLinks from "../NavLinks";
-import RegisterPageForm from "../RegisterPageForm";
-import Footer from "../Footer";
+import Header from "../../basic/Header";
+import NavLinks from "../../basic/NavLinks";
+import RegisterPageForm from "../../basic/RegisterPageForm";
+import Footer from "../../basic/Footer";
 
 class Register extends Component {
 

@@ -1,9 +1,9 @@
 import React, {Component} from 'react';
-import Header from "../Header";
-import NavLinks from "../NavLinks";
-import Footer from "../Footer";
-import SigninBlock from "../SigninBlock";
-import RegisterBlock from "../RegisterBlock";
+import Header from "../../basic/Header";
+import NavLinks from "../../basic/NavLinks";
+import Footer from "../../basic/Footer";
+import SigninBlock from "../../basic/SigninBlock";
+import RegisterBlock from "../../basic/RegisterBlock";
 
 class Signin extends Component {
     render() {

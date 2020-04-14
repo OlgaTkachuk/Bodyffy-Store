@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import Slide from './Slide';
-import slider_data from '../data/slider_data1';
+import slider_data from '../../assets/data/slider_data1';
 import LeftArrow from './LeftArrow';
 import RightArrow from './RightArrow';
 

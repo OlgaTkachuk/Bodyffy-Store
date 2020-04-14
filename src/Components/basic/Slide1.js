@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import slider_data1 from "../data/slider_data1";
+import slider_data1 from "../../assets/data/slider_data1";
 import connect from "react-redux/es/connect/connect";
 
 class Slide1 extends Component {

@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import slider1 from '../images/slider1.jpg'
+import slider1 from '../../assets/images/slider1.jpg'
 
 class CartItem extends Component {
     render() {

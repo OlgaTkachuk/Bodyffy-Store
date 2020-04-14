@@ -1,9 +1,9 @@
 import React, {Component} from 'react';
-import Header from "../Header";
-import NavLinks from "../NavLinks";
-import Footer from "../Footer";
-import Cart from "../Cart";
-import Summary from "../Summary";
+import Header from "../../basic/Header";
+import NavLinks from "../../basic/NavLinks";
+import Footer from "../../basic/Footer";
+import Cart from "../../basic/Cart";
+import Summary from "../../basic/Summary";
 
 class ShoppingCart extends Component {
     render() {

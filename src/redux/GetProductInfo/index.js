@@ -44,35 +44,6 @@ export class ProductService {
             return err;
         }
     };
-
-    // getProduct = () => async (dispatch, getState) => {
-    //     const state = getState()
-    //     try {
-    //         const response = await Client.getEntries({
-    //             'content_type': 'bodyffyStore',
-    //         });
-    //         console.log(response, 'response');
-    //         const item = response.items.filter(item =>
-    //             item.fields.slug === product.name
-    //         )
-    //         const photos = item?.map(i =>
-    //             i.fields?.photos?.map(image =>
-    //                 image.fields.file.url))
-    //         console.log(photos, 'photos');
-    //         dispatch({
-    //             type: GET_PHOTOS_SUCCESS,
-    //             payload: {photos, item}
-    //         })
-    //
-    //     } catch (e) {
-    //         dispatch({
-    //             type: GET_PHOTOS_FAIL,
-    //             error: true,
-    //             payload: new Error(e),
-    //         })
-    //     }
-    // }
-
 }
 
 

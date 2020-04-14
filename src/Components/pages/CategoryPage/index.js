@@ -1,9 +1,9 @@
 import React, {Component} from 'react';
-import Header from "../Header";
-import Footer from "../Footer";
-import NavLinks from "../NavLinks";
-import ItemsCollection from "../ItemsCollection";
-import PageCategories from "../PageCategories";
+import Header from "../../basic/Header";
+import Footer from "../../basic/Footer";
+import NavLinks from "../../basic/NavLinks";
+import ItemsCollection from "../../basic/ItemsCollection";
+import PageCategories from "../../basic/PageCategories";
 
 class CategoryPage extends Component {
     render() {

@@ -1,7 +1,5 @@
 import React, {Component} from 'react';
 
-// import rightArrow from '../../images/next.svg'
-
 class ProductPhotos extends Component {
     state = {
         currPhotoIndex: 0
@@ -28,6 +26,26 @@ class ProductPhotos extends Component {
                     }
                 }))
     }
+    onRightArrow = () => {
+        if (this.state.currPhotoIndex < this.props.photos.length - 1) {
+            this.setState({
+                currPhotoIndex: this.state.currPhotoIndex + 1
+            })
+        }
+        // else if (this.state.currPhotoIndex = this.props.photos.length-1) {
+        //     this.setState({
+        //         currPhotoIndex: this.state.currPhotoIndex + 1
+        //     })
+        // }
+
+    }
+    onLeftArrow = () => {
+        if (this.state.currPhotoIndex > 0) {
+            this.setState({
+                currPhotoIndex: this.state.currPhotoIndex - 1
+            })
+        }
+    }
     // return photos.map(el => (
     //     <div>
     //         <img className={'slide-image'} src={el} alt=""/>
@@ -40,18 +58,11 @@ class ProductPhotos extends Component {
         return (
             <>
                 <div className={'photo-block'}>
-                    {/*<br/>*/}
-                    {/*<div>*/}
-                    {/*<button onClick={this.onBtnClick}>product1</button>*/}
-                    {/*<button onClick={this.onBtnClick}>product2</button>*/}
-                    {/*<button onClick={this.onBtnClick}>product3</button>*/}
-                    {/*<button onClick={this.onBtnClick}>product4</button>*/}
-                    {/*<button onClick={this.onBtnClick}>product5</button>*/}
-                    {/*</div>*/}
-                    {/*<br/>*/}
-                    <button><img src={leftArrow} height="50" width="50"/></button>
-                    {this.renderTemplate()}
-                    <button><img src={rightArrow} height="50" width="50"/></button>
+                    <div className='slider-container'>
+                        <button><img src={leftArrow} onClick={this.onLeftArrow} height="50" width="50"/></button>
+                        {this.renderTemplate()}
+                        <button><img src={rightArrow} onClick={this.onRightArrow} height="50" width="50"/></button>
+                    </div>
                 </div>
             </>
         );

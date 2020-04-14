@@ -1,10 +1,9 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import TestPage from "../Components/pages/TestPage";
-import {getPhotos} from "../redux/GetProductInfo/actions";
-import ProductService from '../redux/GetProductInfo'
-import actions from "../redux/GetProductInfo/actions";
-import Product from "../Components/Product";
+import {getPhotos} from "../../redux/GetProductInfo/actions";
+import ProductService from '../../redux/GetProductInfo/index'
+import actions from "../../redux/GetProductInfo/actions";
+import Product from "../../Components/pages/ProductPage/index";
 
 const mapStateToProps = store => {
     console.log(store)

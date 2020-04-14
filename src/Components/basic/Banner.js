@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import banner1 from '../images/desk1.jpg'
+import banner1 from '../../assets/images/desk1.jpg'
 import {Link} from "react-router-dom";
 
 class Banner extends Component {
