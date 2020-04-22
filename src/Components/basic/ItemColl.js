@@ -14,7 +14,7 @@ class ItemColl extends Component {
                 {
                     this.state.items.map((i, index) =>
                         <div className={'item-coll'} key={index}>
-                            <Link to={`/item/${index}`}>
+                            <Link to={`/item/product${index}`}>
                                 <img src={i.image} className={'item-img'}/>
                             </Link>
                         </div>
