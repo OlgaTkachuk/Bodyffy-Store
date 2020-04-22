@@ -5,7 +5,7 @@ class ProductPhotos extends Component {
         currPhotoIndex: 0
     }
     renderTemplate = () => {
-        const {photos, isFetching, error} = this.props
+        const {photos, isFetching, error, leftArrow, rightArrow} = this.props
         console.log(photos);
         if (error) {
             return <p className="error">Во время загрузки фото произошла ошибка</p>
@@ -18,9 +18,13 @@ class ProductPhotos extends Component {
                 photos.map((el, index) => {
                     if (index === this.state.currPhotoIndex) {
                         return (
+                            <>
+                            <button><img src={leftArrow} onClick={this.onLeftArrow} height="50" width="50"/></button>
                             <div>
                                 <img className={'slide-image'} src={el} alt=""/>
                             </div>
+                        <button><img src={rightArrow} onClick={this.onRightArrow} height="50" width="50"/></button>
+                        </>
                         )
                     }
                 }))
@@ -58,9 +62,9 @@ class ProductPhotos extends Component {
             <>
                 <div className={'photo-block'}>
                     <div className='slider-container'>
-                        <button><img src={leftArrow} onClick={this.onLeftArrow} height="50" width="50"/></button>
+                        {/*<button><img src={leftArrow} onClick={this.onLeftArrow} height="50" width="50"/></button>*/}
                         {this.renderTemplate()}
-                        <button><img src={rightArrow} onClick={this.onRightArrow} height="50" width="50"/></button>
+                        {/*<button><img src={rightArrow} onClick={this.onRightArrow} height="50" width="50"/></button>*/}
                     </div>
                 </div>
             </>

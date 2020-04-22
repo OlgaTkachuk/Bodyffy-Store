@@ -2,13 +2,14 @@ import React , { Component } from 'react';
 import {Route, Switch} from 'react-router-dom'
 import './App.css';
 
-import Home from './Components/pages/Home/'
-import CategoryPage from "./Components/pages/CategoryPage/";
+
 import Signin from "./Components/pages/Signin/";
 import Register from "./Components/pages/Register/";
 import ShoppingCart from "./Components/pages/ShoppingCart/";
 import ProductPage from "./Containers/ProductPage/";
+import CategoryPage from "./Containers/CategoryPage/";
 import ResponsiveSlider from "./Components/basic/ResponsiveSlider/";
+import Home from "./Components/pages/Home";
 
 
 class App extends Component {
