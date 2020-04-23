@@ -1,20 +1,40 @@
 import React, {Component} from 'react';
+import {Link} from "react-router-dom";
 
 class PageCategories extends Component {
-    render() {
-        return (
-            <div className={'section'}>
-                <div className={'container'}>
-                    <h2 className={"categories-title"}>{this.props.cat_title}</h2>
-                    <div className={"categories-wrapper"}>
-                        <div className={'cat-block'}>1</div>
-                        <div className={'cat-block'}>2</div>
-                        <div className={'cat-block'}>3</div>
-                        <div className={'cat-block'}>4</div>
+    renderTemplate = () => {
+        const {photos, isFetching, error, collections, cat_title} = this.props
+
+        if (error) {
+            return <p className="error">Во время загрузки произошла ошибка</p>
+        }
+
+        if (isFetching) {
+            return <p>Загрузка...</p>
+        } else
+            return (
+                <div className={'section'}>
+                    <div className={'container'}>
+                        <h2 className={"categories-title"}>{cat_title}</h2>
+                        <div className={"categories-wrapper"}>
+                            {photos.map((i, index) =>
+                                <div className={'item-coll'} key={index}>
+                                    {/*<Link to={`/item/${category_slugs[index]}`}>*/}
+                                        <img src={i} className={'item-img'}/>
+                                    {/*</Link>*/}
+                                </div>
+                            )}
+                        </div>
                     </div>
                 </div>
-            </div>
-        );
+            )
+    }
+    render() {
+        return (
+        <section>
+            {this.renderTemplate()}
+        </section>
+        )
     }
 }
 

@@ -2,6 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import actions from "../../redux/GetCategoryInfo/actions";
 import CategoryPage from "../../Components/pages/CategoryPage/";
+import CategoryService from "../../redux/GetCategoryInfo/";
 
 const mapStateToProps = store => {
     console.log(store)
@@ -12,7 +13,7 @@ const mapStateToProps = store => {
 const mapDispatchToProps = dispatch => {
     return {
         setActiveCategorySlug: categorySlug => dispatch(actions.setActiveCategorySlug(categorySlug)),
-        // getProductsList: () => dispatch(ProductService.getProductsList()),
+        getCategoryProductsList: () => dispatch(CategoryService.getCategoryProductsList()),
     }
 }
 

@@ -552,7 +552,8 @@ footer {
 }
 
 .item-img {
-    width: 22vw;
+    height: 250px;
+    object-fit: fill;
 }
 .item-img:hover {
     cursor: pointer;
@@ -581,7 +582,7 @@ footer {
 .categories-wrapper {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
     margin: 2rem;
 }
 

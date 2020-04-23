@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import {getPhotos} from "../../redux/GetProductInfo/actions";
+// import {getPhotos} from "../../redux/GetProductInfo/actions";
 import ProductService from '../../redux/GetProductInfo/index'
 import actions from "../../redux/GetProductInfo/actions";
 import Product from "../../Components/pages/ProductPage/index";
