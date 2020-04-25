@@ -20,6 +20,7 @@ export class ProductService {
             await dispatch(actions.getProductAttempt());
             const response = await Client.getEntries({
                 'content_type': 'bodyffyStore',
+                'fields.slug': product
             });
             const item = response.items.filter(item =>
                 item.fields.slug === product

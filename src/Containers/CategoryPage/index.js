@@ -13,7 +13,9 @@ const mapStateToProps = store => {
 const mapDispatchToProps = dispatch => {
     return {
         setActiveCategorySlug: categorySlug => dispatch(actions.setActiveCategorySlug(categorySlug)),
+        setActiveCollection: collectionSlug => dispatch(actions.setActiveCollection(collectionSlug)),
         getCategoryProductsList: () => dispatch(CategoryService.getCategoryProductsList()),
+        getCollectionProductsList: () => dispatch(CategoryService.getCollectionProductsList()),
     }
 }
 
