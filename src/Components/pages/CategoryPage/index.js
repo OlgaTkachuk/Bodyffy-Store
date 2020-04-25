@@ -4,8 +4,18 @@ import Footer from "../../basic/Footer";
 import NavLinks from "../../basic/NavLinks";
 import ItemsCollection from "../../basic/ItemsCollection";
 import PageCategories from "../../basic/PageCategories";
+import styles from './CategoryPageStyle.scss'
 
 class CategoryPage extends Component {
+    // constructor(props) {
+    //     super(props)
+    //     this.state = {
+    //         activeCollection: 'all',
+    //         activePhotos: this.props.categoryInfo.category_photos.flat(),
+    //         // activePhotos: this.props.categoryInfo.category_photos.flat(),
+    //         activeSlugs: this.props.categoryInfo.category_slugs
+    //     }
+    // }
     componentDidMount() {
         this.onRender();
     }
@@ -19,18 +29,22 @@ class CategoryPage extends Component {
     onRender = async () => {
         const categorySlug = this.props.match.params.slug;
         await this.props.setActiveCategorySlug(categorySlug);
-        console.log(this.props.getCategoryProductsList + 'PROPS');
         await this.props.getCategoryProductsList();
     }
 
+    handlePageCollections = (collection) => {
+        const collectionSlug  = collection.collection_name;
+        this.props.setActiveCollection(collectionSlug);
+        this.props.getCollectionProductsList();
+    }
     render() {
-        const {category_photos, category_slugs, category_collections, error, isFetching, category_title, collections_photos} = this.props.categoryInfo;
+        const {category_photos, category_slugs, error, isFetching, category_title, collections_photos, collections} = this.props.categoryInfo;
         return (
             <div>
                 <Header/>
                 <NavLinks/>
-                <PageCategories cat_title={category_title} error={error} isFetching={isFetching}
-                                photos={collections_photos.flat()} collections={category_collections}/>
+                <PageCategories cat_title={category_title} error={error} isFetching={isFetching} onChange={this.handlePageCollections}
+                                photos={collections_photos.flat()} collections={collections}  />
                 <ItemsCollection photos={category_photos.flat()} category_slugs={category_slugs} error={error}
                                  isFetching={isFetching}/>
                 <Footer/>

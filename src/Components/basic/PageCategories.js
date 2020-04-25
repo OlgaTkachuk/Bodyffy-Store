@@ -3,7 +3,7 @@ import {Link} from "react-router-dom";
 
 class PageCategories extends Component {
     renderTemplate = () => {
-        const {photos, isFetching, error, collections, cat_title} = this.props
+        const {photos, isFetching, error, collections, cat_title, onChange} = this.props
 
         if (error) {
             return <p className="error">Во время загрузки произошла ошибка</p>
@@ -14,11 +14,11 @@ class PageCategories extends Component {
         } else
             return (
                 <div className={'section'}>
-                    <div className={'container'}>
+                    <div className={"PageCategory"}>
                         <h2 className={"categories-title"}>{cat_title}</h2>
                         <div className={"categories-wrapper"}>
                             {photos.map((i, index) =>
-                                <div className={'item-coll'} key={index}>
+                                <div className={'item-coll'} key={index} onClick={()=> {onChange(collections[index])}}>
                                     {/*<Link to={`/item/${category_slugs[index]}`}>*/}
                                         <img src={i} className={'item-img'}/>
                                     {/*</Link>*/}
