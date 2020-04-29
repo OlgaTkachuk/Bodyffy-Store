@@ -1,7 +1,7 @@
 import {ADD_PRODUCT_TO_CART} from "./constants";
 
 const initialState = {
-    cart: ''
+    cart: []
 }
 
 export function shoppingCartReducer(state = initialState, action) {

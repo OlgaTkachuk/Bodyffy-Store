@@ -19,7 +19,7 @@ export class Cart {
         // let amount = state.prodInfo.count;
         let photo = state.prodInfo.photos.flat()[0];
         let price = state.prodInfo.price.flat()[0]
-        const cart = [];
+        const cart = state.cart.cart;
         cart.push({
             productSlug, title, photo, price
         })
