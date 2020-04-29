@@ -1,5 +1,4 @@
 import Client from "../../Contentful";
-import {GET_PHOTOS_FAIL, GET_PHOTOS_SUCCESS} from "./constants";
 import actions from './actions'
 
 export class ProductService {
@@ -15,7 +14,7 @@ export class ProductService {
     getProductsList = () => async (dispatch,getState) => {
         const state = getState();
         console.log(state);
-        const product = state.prodImgs.product;
+        const product = state.prodInfo.product;
         try {
             await dispatch(actions.getProductAttempt());
             const response = await Client.getEntries({

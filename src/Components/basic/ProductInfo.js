@@ -1,7 +1,7 @@
 import React from 'react';
 
 const ProductInfo = (props) => {
-    const {title, category, price} = props
+    const {title, category, price, addToCart} = props
     return (
         <div className={'descr-block'}>
             <div>
@@ -21,12 +21,12 @@ const ProductInfo = (props) => {
             </div>
             <br/>
 
-            <form>
-                <button type={'submit'} className={'button-form item-page-button'}>
+
+                <button type={'submit'} className={'button-form item-page-button'} onClick={()=> {addToCart()}}>
                     <h3 className={'item-page-price'}>{price} uah</h3>
                     В корзину
                 </button>
-            </form>
+
             <br/>
             <div className={'item-page-text'}><p>Лорем ипсум долор сит амет, еос ин омнесяуе вивендум еррорибус, сеа ин
                 тота малорум интеллегам.

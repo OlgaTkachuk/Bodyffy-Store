@@ -12,7 +12,7 @@ const initialState = {
     price: 0
 }
 
-export function getProductsImgReducer(state = initialState, action) {
+export function getProductsInfoReducer(state = initialState, action) {
     switch (action.type) {
         case GET_PRODUCT_FAIL:
             return {...state, error: action.payload.message, isFetching: false}
