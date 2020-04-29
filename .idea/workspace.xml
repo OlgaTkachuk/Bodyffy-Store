@@ -2,18 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="873279fe-7677-414f-a44a-75f452ad5508" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/redux/ManageShoppingCart/actions.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/redux/ManageShoppingCart/constants.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/redux/ManageShoppingCart/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/redux/ManageShoppingCart/reducers.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/basic/ProductInfo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/basic/ProductInfo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/pages/ProductPage/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/pages/ProductPage/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Containers/ProductPage/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Containers/ProductPage/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/GetProductInfo/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/GetProductInfo/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/GetProductInfo/reducers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/GetProductInfo/reducers.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/reducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/ManageShoppingCart/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/ManageShoppingCart/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/ManageShoppingCart/reducers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/ManageShoppingCart/reducers.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -156,7 +147,7 @@
       <workItem from="1587141813242" duration="8091000" />
       <workItem from="1587586276953" duration="36309000" />
       <workItem from="1588165916883" duration="3192000" />
-      <workItem from="1588185442089" duration="9486000" />
+      <workItem from="1588185442089" duration="10169000" />
     </task>
     <task id="LOCAL-00001" summary="redux test">
       <created>1586365361016</created>
