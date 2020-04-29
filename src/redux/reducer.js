@@ -1,12 +1,13 @@
 import { combineReducers } from 'redux'
-import {getProductsImgReducer} from "./GetProductInfo/reducers";
+import {getProductsInfoReducer} from "./GetProductInfo/reducers";
 import {getCategoryInfoReducer} from "./GetCategoryInfo/reducers";
-
+import {shoppingCartReducer} from "./ManageShoppingCart/reducers";
 
 
 export const rootReducer = combineReducers ({
-    prodImgs: getProductsImgReducer,
-    categoryInfo: getCategoryInfoReducer
+    prodInfo: getProductsInfoReducer,
+    categoryInfo: getCategoryInfoReducer,
+    cart: shoppingCartReducer
 })
 
 

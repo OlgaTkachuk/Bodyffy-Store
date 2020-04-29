@@ -25,7 +25,7 @@ class Product extends Component {
     }
 
     render() {
-        const {error, isFetching, photos, title, category, price} = this.props.prodImgs;
+        const {error, isFetching, photos, title, category, price} = this.props.prodInfo;
         return (
             <>
                 <div>
@@ -33,7 +33,7 @@ class Product extends Component {
                     <NavLinks/>
                     <div className={'item-block'}>
                     <ProductPhotos photos={photos.flat()} isFetching={isFetching} error={error} rightArrow={rightArrow} leftArrow={leftArrow}/>
-                    <ProductInfo title={title} category={category} price={price}/>
+                    <ProductInfo title={title} category={category} price={price} addToCart={this.props.addToCart}/>
                     </div>
                     <div className={'block-wrapper'}>
                     <div className={'block-menu-title'}><h3>You May Also Like</h3></div>
