@@ -832,6 +832,8 @@ select option{
 .cart-item-title {
     font-size: 1.2rem;
     margin-bottom: 20px;
+    display: inline-flex;
+    justify-content: space-between;
 }
 
 .cart-item-price {
@@ -862,4 +864,13 @@ select option{
 .resp-slider_img {
     height: 40vh;
     object-fit: cover;
+}
+
+.close-button {
+    max-width: 30px;
+    max-height: 30px;
+    margin: 20px;
+    position: relative;
+    right: 0;
+
 }

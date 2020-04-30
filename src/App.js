@@ -5,7 +5,7 @@ import './App.css';
 
 import Signin from "./Components/pages/Signin/";
 import Register from "./Components/pages/Register/";
-import ShoppingCart from "./Components/pages/ShoppingCart/";
+import ShoppingCart from "./Containers/ShoppingCart/";
 import ProductPage from "./Containers/ProductPage/";
 import CategoryPage from "./Containers/CategoryPage/";
 import ResponsiveSlider from "./Components/basic/ResponsiveSlider/";
