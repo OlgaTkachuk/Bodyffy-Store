@@ -2,9 +2,9 @@ import {
     ADD_PRODUCT_TO_CART
 } from "./constants";
 
-const addProductToCart = (cart) => ({
+const addProductToCart = (payload) => ({
     type: ADD_PRODUCT_TO_CART,
-    payload: cart
+    payload: payload
 });
 
 
