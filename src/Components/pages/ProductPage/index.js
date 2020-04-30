@@ -33,7 +33,7 @@ class Product extends Component {
                     <NavLinks/>
                     <div className={'item-block'}>
                     <ProductPhotos photos={photos.flat()} isFetching={isFetching} error={error} rightArrow={rightArrow} leftArrow={leftArrow}/>
-                    <ProductInfo title={title} category={category} price={price} addToCart={this.props.addToCart}/>
+                    <ProductInfo title={title} category={category} price={price} addToCart={this.props.addToCart} changeAmount={this.props.changeAmount}/>
                     </div>
                     <div className={'block-wrapper'}>
                     <div className={'block-menu-title'}><h3>You May Also Like</h3></div>
