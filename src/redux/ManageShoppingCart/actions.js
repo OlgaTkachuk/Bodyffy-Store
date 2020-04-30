@@ -1,13 +1,23 @@
 import {
-    ADD_PRODUCT_TO_CART
+    ADD_PRODUCT_TO_CART, DELETE_PRODUCT_FROM_CART,CHANGE_CART_PRODUCT_AMOUNT
 } from "./constants";
 
-const addProductToCart = (cart) => ({
+const addProductToCart = (payload) => ({
     type: ADD_PRODUCT_TO_CART,
-    payload: cart
+    payload: payload
 });
-
+const deleteProductFromCart = (payload) => ({
+    type: DELETE_PRODUCT_FROM_CART,
+    payload: payload
+});
+// const changeAmountInCart = (payload) => ({
+//     type: CHANGE_CART_PRODUCT_AMOUNT,
+//     payload: payload
+// });
+//
 
 export default {
-   addProductToCart
+   addProductToCart,
+    deleteProductFromCart,
+    // changeAmountInCart
 }

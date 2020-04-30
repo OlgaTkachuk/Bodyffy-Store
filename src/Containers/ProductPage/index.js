@@ -18,7 +18,8 @@ const mapDispatchToProps = dispatch => {
     return {
         setActiveProductSlug: product => dispatch(actions.setActiveProductSlug(product)),
         getProductsList: () => dispatch(ProductService.getProductsList()),
-        addToCart: () => dispatch(Cart.addToCart())
+        addToCart: () => dispatch(Cart.addToCart()),
+        changeAmount: newCount => dispatch(actions.changeAmount(newCount))
     }
 }
 

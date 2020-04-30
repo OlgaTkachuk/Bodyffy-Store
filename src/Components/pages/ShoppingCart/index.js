@@ -6,14 +6,16 @@ import Cart from "../../basic/Cart";
 import Summary from "../../basic/Summary";
 
 class ShoppingCart extends Component {
+
     render() {
+        const {total, cart} = this.props.cart
         return (
             <div>
                 <Header/>
                 <NavLinks/>
                 <div className={'cart-wrapper'}>
-                    <Cart/>
-                    <Summary/>
+                    <Cart cart={cart} deleteFromCart={this.props.deleteFromCart}/>
+                    <Summary total={total}/>
                 </div>
                 <Footer/>
             </div>
