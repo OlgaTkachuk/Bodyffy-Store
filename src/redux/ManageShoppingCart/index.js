@@ -11,8 +11,8 @@ export class Cart {
         }
         return Cart.instance;
     }
-    calculateTotal(products) {
-        return products.reduce((acc, product) => {
+    calculateTotal(cart) {
+        return cart.reduce((acc, product) => {
             return acc + product.price * product.amount;
         }, 0);
     }
@@ -44,16 +44,25 @@ export class Cart {
         await dispatch(actions.addProductToCart({cart, cartTotal}))
     };
 
-    // updateProductAmount = (slugToUpdate, newQuantity) => async (dispatch,getState) => {
-    //     const state = getState();
-    //     const cart = state.cart.cart;
-    //
-    //     let prodId = cart.findIndex(({productSlug}) => productSlug === slugToUpdate)
-    //     cart.splice(prodId, 1);
-    //     console.log(cart)
-    //     let cartTotal = cart.calculateTotal(cart)
-    //     await dispatch(actions.addProductToCart({cart, cartTotal}))
-    // };
+    updateProductAmount = (slugToUpdate, operator) => async (dispatch,getState) => {
+        const state = getState();
+        let cart = state.cart.cart;
+
+        cart.map((product, index)=> {
+            if (product.productSlug === slugToUpdate) {
+                if (operator === 'minus'){
+                product.amount = product.amount-1
+            } else {
+                    product.amount = product.amount+1
+                }
+            }
+            return cart
+        })
+        console.log(cart)
+        // let cartTotal = state.cart.total
+        const cartTotal = this.calculateTotal(cart)
+        await dispatch(actions.changeAmountInCart({cart, cartTotal}))
+    };
 
 }
 

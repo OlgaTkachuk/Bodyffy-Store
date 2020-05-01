@@ -10,14 +10,14 @@ const deleteProductFromCart = (payload) => ({
     type: DELETE_PRODUCT_FROM_CART,
     payload: payload
 });
-// const changeAmountInCart = (payload) => ({
-//     type: CHANGE_CART_PRODUCT_AMOUNT,
-//     payload: payload
-// });
-//
+const changeAmountInCart = (payload) => ({
+    type: CHANGE_CART_PRODUCT_AMOUNT,
+    payload: payload
+});
+
 
 export default {
    addProductToCart,
     deleteProductFromCart,
-    // changeAmountInCart
+    changeAmountInCart
 }

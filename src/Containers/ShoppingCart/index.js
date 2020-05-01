@@ -12,6 +12,7 @@ const mapStateToProps = store => {
 const mapDispatchToProps = dispatch => {
     return {
         deleteFromCart: slugToRemove => dispatch(Cart.deleteFromCart(slugToRemove)),
+        updateProductAmount: (slugToUpdate, operator) => dispatch(Cart.updateProductAmount(slugToUpdate, operator)),
     }
 }
 

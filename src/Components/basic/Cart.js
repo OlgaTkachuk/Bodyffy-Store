@@ -4,17 +4,25 @@ import close from '../../assets/images/close.svg'
 class Cart extends Component {
     constructor(props) {
         super(props);
-        this.state={
-            value: 1
-        }
         this.handleClick = this.handleClick.bind(this)
+        this.handleMinus = this.handleMinus.bind(this)
+        this.handlePlus = this.handlePlus.bind(this)
     }
-    handleClick(event) {
 
-        this.setState({value:event.target.value})
+    handleClick(event) {
         let slugToRemove = event.target.id;
         console.log(slugToRemove, "handleclick slug")
         this.props.deleteFromCart(slugToRemove)
+    }
+    handleMinus(event) {
+        let slugToUpdate=event.target.id
+        let operator = 'minus'
+      this.props.updateProductAmount(slugToUpdate, operator)
+    }
+    handlePlus(event) {
+        let slugToUpdate=event.target.id
+        let operator = 'plus'
+      this.props.updateProductAmount(slugToUpdate, operator)
     }
     renderTemplate = () => {
         const cart = this.props.cart
@@ -31,10 +39,12 @@ class Cart extends Component {
                                         <h3>{product.title}</h3>
                                     </div>
                                     <div className={"quantity-bar"}>
+                                        <div onClick={this.handleMinus} id={product.productSlug}>-</div>
                                         <p>Quantity: {product.amount}</p>
+                                        <div onClick={this.handlePlus} id={product.productSlug}>+</div>
                                     </div>
                                     <div className={'subtotal cart-item-price'}>
-                                        <p className={'total-text'}>Subtotal</p>
+                                        <p className={'total-text'}>Price</p>
                                         <p className={'total-text'}>${product.price}</p>
                                     </div>
                                 </div>

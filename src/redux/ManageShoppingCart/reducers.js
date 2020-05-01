@@ -1,4 +1,4 @@
-import {ADD_PRODUCT_TO_CART, DELETE_PRODUCT_FROM_CART} from "./constants";
+import {ADD_PRODUCT_TO_CART, DELETE_PRODUCT_FROM_CART,CHANGE_CART_PRODUCT_AMOUNT} from "./constants";
 
 const initialState = {
     cart: [],
@@ -10,6 +10,8 @@ export function shoppingCartReducer(state = initialState, action) {
         case ADD_PRODUCT_TO_CART:
             return {...state, cart: action.payload.cart, total: action.payload.cartTotal}
         case DELETE_PRODUCT_FROM_CART:
+            return {...state, cart: action.payload.cart, total: action.payload.cartTotal}
+        case CHANGE_CART_PRODUCT_AMOUNT:
             return {...state, cart: action.payload.cart, total: action.payload.cartTotal}
         default:
             return state
