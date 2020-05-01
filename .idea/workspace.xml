@@ -2,14 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="873279fe-7677-414f-a44a-75f452ad5508" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Containers/ShoppingCart/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/basic/Cart.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/basic/Cart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/basic/CartItem.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/basic/Summary.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/basic/Summary.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/pages/ShoppingCart/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/pages/ShoppingCart/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Containers/ShoppingCart/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Containers/ShoppingCart/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/redux/ManageShoppingCart/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/ManageShoppingCart/actions.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/redux/ManageShoppingCart/constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/ManageShoppingCart/constants.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/redux/ManageShoppingCart/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/ManageShoppingCart/index.js" afterDir="false" />
@@ -125,7 +121,8 @@
       <workItem from="1588165916883" duration="3192000" />
       <workItem from="1588185442089" duration="11091000" />
       <workItem from="1588241007678" duration="13016000" />
-      <workItem from="1588258577048" duration="1032000" />
+      <workItem from="1588258577048" duration="3049000" />
+      <workItem from="1588329587313" duration="5519000" />
     </task>
     <task id="LOCAL-00001" summary="redux test">
       <created>1586365361016</created>
@@ -193,6 +190,10 @@
       <screen x="1" y="-1080" width="1920" height="1040" />
     </state>
     <state x="741" y="-805" key="FileChooserDialogImpl/0.0.1280.680/1.-1080.1920.1040@1.-1080.1920.1040" timestamp="1588165944766" />
+    <state x="617" y="-299" key="run.anything.popup" timestamp="1588337082656">
+      <screen x="1" y="-1080" width="1920" height="1040" />
+    </state>
+    <state x="617" y="-299" key="run.anything.popup/0.0.1280.680/1.-1080.1920.1040@1.-1080.1920.1040" timestamp="1588337082656" />
     <state x="624" y="-855" width="672" height="678" key="search.everywhere.popup" timestamp="1588249179106">
       <screen x="1" y="-1080" width="1920" height="1040" />
     </state>

@@ -14,7 +14,7 @@ class ShoppingCart extends Component {
                 <Header/>
                 <NavLinks/>
                 <div className={'cart-wrapper'}>
-                    <Cart cart={cart} deleteFromCart={this.props.deleteFromCart}/>
+                    <Cart cart={cart} deleteFromCart={this.props.deleteFromCart} updateProductAmount={this.props.updateProductAmount}/>
                     <Summary total={total}/>
                 </div>
                 <Footer/>
