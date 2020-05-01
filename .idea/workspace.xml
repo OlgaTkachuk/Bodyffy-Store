@@ -4,12 +4,7 @@
     <list default="true" id="873279fe-7677-414f-a44a-75f452ad5508" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/basic/Cart.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/basic/Cart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/pages/ShoppingCart/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/pages/ShoppingCart/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Containers/ShoppingCart/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Containers/ShoppingCart/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/ManageShoppingCart/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/ManageShoppingCart/actions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/ManageShoppingCart/constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/ManageShoppingCart/constants.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/redux/ManageShoppingCart/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/ManageShoppingCart/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/ManageShoppingCart/reducers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/ManageShoppingCart/reducers.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,7 +117,7 @@
       <workItem from="1588185442089" duration="11091000" />
       <workItem from="1588241007678" duration="13016000" />
       <workItem from="1588258577048" duration="3049000" />
-      <workItem from="1588329587313" duration="5519000" />
+      <workItem from="1588329587313" duration="9066000" />
     </task>
     <task id="LOCAL-00001" summary="redux test">
       <created>1586365361016</created>
