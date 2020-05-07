@@ -6,18 +6,4 @@ import slider5 from '../images/slider5.jpg'
 import slider6 from '../images/slider6.jpg'
 import slider7 from '../images/slider7.jpg'
 
-export default [{
-    image: slider1
-}, {
-    image: slider2
-}, {
-    image: slider3
-}, {
-    image: slider4
-}, {
-    image: slider5
-}, {
-    image: slider6
-}, {
-    image: slider7
-}]
+export default [slider1,slider2,slider3,slider4,slider5,slider6, slider7]

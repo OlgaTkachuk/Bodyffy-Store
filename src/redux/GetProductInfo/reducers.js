@@ -16,7 +16,9 @@ const initialState = {
     title: '',
     category: '',
     price: 0,
-    currentAmount: 1
+    currentAmount: 1,
+    similar_photos: [],
+    similar_links: []
 }
 
 export function getProductsInfoReducer(state = initialState, action) {
@@ -34,7 +36,9 @@ export function getProductsInfoReducer(state = initialState, action) {
                 item: action.payload.item,
                 title: action.payload.title,
                 category: action.payload.category,
-                price: action.payload.price
+                price: action.payload.price,
+                similar_photos: action.payload.similar_photos,
+                similar_links: action.payload.similar_links
             }
         case SET_ACTIVE_PRODUCT_SLUG:
             return {...state, product: action.productSlug}

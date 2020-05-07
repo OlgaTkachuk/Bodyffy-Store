@@ -2,7 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="873279fe-7677-414f-a44a-75f452ad5508" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/Components/basic/ProductInfo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/basic/ProductInfo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/basic/ResponsiveSlider.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Containers/HomePage/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/GetSliderData/actions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/GetSliderData/constants.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/GetSliderData/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/GetSliderData/reducers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/basic/ProductImages.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/basic/ResponsiveSlider/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/basic/Summary.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/basic/Summary.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/basic/Test1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/pages/Home/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/pages/Home/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/pages/ProductPage/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/pages/ProductPage/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/data/slider_data1.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/data/slider_data1.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/GetCategoryInfo/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/GetCategoryInfo/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/GetProductInfo/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/GetProductInfo/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/GetProductInfo/reducers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/GetProductInfo/reducers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/reducer.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,20 +76,20 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="web.server" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\Programming\javascript\ss-store\src\assets\images" />
-      <recent name="E:\Programming\javascript\ss-store\src\images" />
-      <recent name="E:\Programming\javascript\ss-store\src" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Programming\javascript\ss-store\src\Components\basic\" />
       <recent name="E:\Programming\javascript\ss-store\src\Components\basic" />
       <recent name="E:\Programming\javascript\ss-store\src\Components\pages\Signin" />
       <recent name="E:\Programming\javascript\ss-store\src\Components\pages\ShoppingCart" />
       <recent name="E:\Programming\javascript\ss-store\src\Components\pages\Register" />
-      <recent name="E:\Programming\javascript\ss-store\src\Components\pages\Home" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Programming\javascript\ss-store\src\assets\images" />
+      <recent name="E:\Programming\javascript\ss-store\src\images" />
+      <recent name="E:\Programming\javascript\ss-store\src" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -115,7 +135,8 @@
       <workItem from="1588185442089" duration="11091000" />
       <workItem from="1588241007678" duration="13016000" />
       <workItem from="1588258577048" duration="3049000" />
-      <workItem from="1588329587313" duration="9293000" />
+      <workItem from="1588329587313" duration="23994000" />
+      <workItem from="1588784413127" duration="9365000" />
     </task>
     <task id="LOCAL-00001" summary="redux test">
       <created>1586365361016</created>
@@ -183,6 +204,10 @@
       <screen x="1" y="-1080" width="1920" height="1040" />
     </state>
     <state x="741" y="-805" key="FileChooserDialogImpl/0.0.1280.680/1.-1080.1920.1040@1.-1080.1920.1040" timestamp="1588165944766" />
+    <state x="462" y="-915" key="SettingsEditor" timestamp="1588836057652">
+      <screen x="1" y="-1080" width="1920" height="1040" />
+    </state>
+    <state x="462" y="-915" key="SettingsEditor/0.0.1280.680/1.-1080.1920.1040@1.-1080.1920.1040" timestamp="1588836057652" />
     <state x="617" y="-299" key="run.anything.popup" timestamp="1588337082656">
       <screen x="1" y="-1080" width="1920" height="1040" />
     </state>

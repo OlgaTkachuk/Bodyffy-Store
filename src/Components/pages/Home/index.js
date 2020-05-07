@@ -6,7 +6,7 @@ import BlockMenu from "../../basic/BlockMenu";
 import Footer from "../../basic/Footer";
 import WhiteCard1 from "../../basic/WhiteCard1";
 import Slider1 from "../../basic/Slider1";
-import ResponsiveSlider from "../../basic/ResponsiveSlider/";
+import ResponsiveSlider from "../../basic/ResponsiveSlider";
 
 
 class Home extends Component {

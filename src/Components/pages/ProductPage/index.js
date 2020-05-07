@@ -7,7 +7,7 @@ import Banner from "../../basic/Banner";
 import Footer from "../../basic/Footer";
 import rightArrow from '../../../assets/images/next.svg'
 import leftArrow from '../../../assets/images/previous.svg'
-import ResponsiveSlider from "../../basic/ResponsiveSlider/";
+import ResponsiveSlider from "../../basic/ResponsiveSlider";
 
 class Product extends Component {
     componentDidMount() {
@@ -25,7 +25,7 @@ class Product extends Component {
     }
 
     render() {
-        const {error, isFetching, photos, title, category, price} = this.props.prodInfo;
+        const {error, isFetching, photos, title, category, price, similar_photos, similar_links} = this.props.prodInfo;
         return (
             <>
                 <div>
@@ -37,7 +37,7 @@ class Product extends Component {
                     </div>
                     <div className={'block-wrapper'}>
                     <div className={'block-menu-title'}><h3>You May Also Like</h3></div>
-                    <ResponsiveSlider photos={photos.flat()} />
+                    <ResponsiveSlider photos={similar_photos.flat()} links={similar_links.flat()}/>
                     </div>
                     <Banner/>
                     <Footer/>

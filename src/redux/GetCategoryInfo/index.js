@@ -111,8 +111,6 @@ export class CategoryService {
                 return slugsArr;
             }, []);
 
-
-
             await dispatch(actions.getCollectionProductsSuccess({
                 category_photos,
                 category_slugs,

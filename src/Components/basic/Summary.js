@@ -14,7 +14,7 @@ class Summary extends Component {
                         <p className={'small-text'}>Subtotal</p>
                         <p className={'small-text'}>${this.props.total}</p>
                     </div>
-                    <p className={'small-text'}>Доставка до 3-5 робочих днів</p>
+                    <p className={'small-text'}>Доставка 3-5 робочих днів</p>
                     <div className={'total'}>
                         <p className={'small-text total-text'}>Total</p>
                         <p className={'small-text total-text'}> ${this.props.total}</p>
