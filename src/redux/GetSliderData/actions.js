@@ -12,8 +12,9 @@ const getSlidersSuccess = (payload) => ({
     type: GET_SLIDERS_SUCCESS,
     payload
 });
-const getSlidersFail = () => ({
+const getSlidersFail = (payload) => ({
     type: GET_SLIDERS_FAIL,
+    payload
 });
 
 

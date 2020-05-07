@@ -10,7 +10,7 @@ const initialState = {
 export function getSlidersReducer(state = initialState, action) {
     switch (action.type) {
         case GET_SLIDERS_FAIL:
-            return {...state, error: action.payload.message, isFetching: false}
+            return {...state, isFetching: false, error: action.payload}
         case GET_SLIDERS_ATTEMPT:
             return {...state, isFetching: true}
         case GET_SLIDERS_SUCCESS:

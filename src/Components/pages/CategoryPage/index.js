@@ -6,7 +6,7 @@ import ItemsCollection from "../../basic/ItemsCollection";
 import PageCategories from "../../basic/PageCategories";
 import styles from './CategoryPageStyle.scss'
 
-class CategoryPage extends Component {
+class   CategoryPage extends Component {
     // constructor(props) {
     //     super(props)
     //     this.state = {
