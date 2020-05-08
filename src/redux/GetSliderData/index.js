@@ -45,12 +45,24 @@ export class SliderService {
                 }
                 return sliders
             }, [])
-            console.log(homeSlider1, "SSSSSSSSS1111111");
-            console.log(homeSlider2, "SSSSSSSSS1222222222");
 
-            await dispatch(actions.getSlidersSuccess({homeSlider1, homeSlider2}));
+            const homeSlider3 = response.items.reduce((sliders, item) => {
+                if (item.fields.carouselType === 'sliderHome3') {
+                    sliders.push({
+                        links: item.fields.links.links,
+                        photos: item.fields.photos.reduce((imgArr, img) => {
+                            imgArr.push(img.fields.file.url)
+                            return imgArr
+                        }, [])
+                    })
+                }
+                return sliders
+            }, [])
+
+
+            await dispatch(actions.getSlidersSuccess({homeSlider1, homeSlider2, homeSlider3}));
             return {
-                homeSlider1, homeSlider2
+                homeSlider1, homeSlider2, homeSlider3
             };
         } catch (err) {
             await dispatch(actions.getSlidersFail(err));

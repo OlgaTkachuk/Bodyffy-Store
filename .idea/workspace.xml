@@ -2,16 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="873279fe-7677-414f-a44a-75f452ad5508" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Components/basic/OrderForm.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/pages/OrderPage/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Containers/Home/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Containers/OrderPage/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/basic/ResponsiveSlider.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/basic/ResponsiveSlider.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/pages/CategoryPage/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/pages/CategoryPage/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/basic/OrderForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/basic/OrderForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/basic/Summary.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/basic/Summary.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/basic/Test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/basic/Test.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/pages/Home/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/pages/Home/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/pages/OrderPage/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/pages/OrderPage/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/pages/ShoppingCart/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/pages/ShoppingCart/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Containers/Home/index.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Containers/HomePage/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Containers/HomePage/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/GetSliderData/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/GetSliderData/actions.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/redux/GetSliderData/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/GetSliderData/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/redux/GetSliderData/reducers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/GetSliderData/reducers.js" afterDir="false" />
     </list>
@@ -129,7 +133,7 @@
       <workItem from="1588258577048" duration="3049000" />
       <workItem from="1588329587313" duration="23994000" />
       <workItem from="1588784413127" duration="26636000" />
-      <workItem from="1588873160369" duration="13254000" />
+      <workItem from="1588873160369" duration="26743000" />
     </task>
     <task id="LOCAL-00001" summary="redux test">
       <created>1586365361016</created>
