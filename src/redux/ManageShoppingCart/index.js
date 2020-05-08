@@ -25,9 +25,12 @@ export class Cart {
         let photo = state.prodInfo.photos.flat()[0];
         let price = state.prodInfo.price.flat()[0]
         const cart = state.cart.cart;
+        if (cart.findIndex(({productSlug}) => productSlug === productSlug) < 0){
         cart.push({
             productSlug, title, photo, price, amount
-        })
+        })} else {
+            window.alert("OOOPS You've already added this product to your cart!")
+        }
         let cartTotal = this.calculateTotal(cart)
         await dispatch(actions.addProductToCart({cart, cartTotal}))
     };
@@ -50,9 +53,9 @@ export class Cart {
 
         cart.map((product, index)=> {
             if (product.productSlug === slugToUpdate) {
-                if (operator === 'minus'){
+                if (operator === 'minus' && product.amount >1){
                 product.amount = product.amount-1
-            } else {
+            } else if (operator === 'plus' && product.amount <= 9){
                     product.amount = product.amount+1
                 }
             }

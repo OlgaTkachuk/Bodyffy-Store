@@ -2,14 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="873279fe-7677-414f-a44a-75f452ad5508" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Components/basic/OrderForm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/pages/OrderPage/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Containers/Home/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/basic/Cart.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/basic/Cart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/pages/ShoppingCart/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/pages/ShoppingCart/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Containers/ShoppingCart/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Containers/ShoppingCart/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/ManageShoppingCart/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/ManageShoppingCart/actions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/ManageShoppingCart/constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/ManageShoppingCart/constants.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/ManageShoppingCart/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/ManageShoppingCart/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/ManageShoppingCart/reducers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/ManageShoppingCart/reducers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/basic/ResponsiveSlider.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/basic/ResponsiveSlider.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/pages/CategoryPage/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/pages/CategoryPage/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/pages/Home/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/pages/Home/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Containers/HomePage/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Containers/HomePage/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/GetSliderData/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/GetSliderData/actions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/GetSliderData/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/GetSliderData/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/GetSliderData/reducers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/GetSliderData/reducers.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,20 +67,21 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="web.server" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2020.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\Programming\javascript\ss-store\src\assets\images" />
-      <recent name="E:\Programming\javascript\ss-store\src\images" />
-      <recent name="E:\Programming\javascript\ss-store\src" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Programming\javascript\ss-store\src\Components\basic\" />
       <recent name="E:\Programming\javascript\ss-store\src\Components\basic" />
       <recent name="E:\Programming\javascript\ss-store\src\Components\pages\Signin" />
       <recent name="E:\Programming\javascript\ss-store\src\Components\pages\ShoppingCart" />
       <recent name="E:\Programming\javascript\ss-store\src\Components\pages\Register" />
-      <recent name="E:\Programming\javascript\ss-store\src\Components\pages\Home" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Programming\javascript\ss-store\src\assets\images" />
+      <recent name="E:\Programming\javascript\ss-store\src\images" />
+      <recent name="E:\Programming\javascript\ss-store\src" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -122,7 +127,9 @@
       <workItem from="1588185442089" duration="11091000" />
       <workItem from="1588241007678" duration="13016000" />
       <workItem from="1588258577048" duration="3049000" />
-      <workItem from="1588329587313" duration="5519000" />
+      <workItem from="1588329587313" duration="23994000" />
+      <workItem from="1588784413127" duration="26636000" />
+      <workItem from="1588873160369" duration="13254000" />
     </task>
     <task id="LOCAL-00001" summary="redux test">
       <created>1586365361016</created>
@@ -190,13 +197,40 @@
       <screen x="1" y="-1080" width="1920" height="1040" />
     </state>
     <state x="741" y="-805" key="FileChooserDialogImpl/0.0.1280.680/1.-1080.1920.1040@1.-1080.1920.1040" timestamp="1588165944766" />
+    <state x="462" y="-915" key="SettingsEditor" timestamp="1588836057652">
+      <screen x="1" y="-1080" width="1920" height="1040" />
+    </state>
+    <state x="462" y="-915" key="SettingsEditor/0.0.1280.680/1.-1080.1920.1040@1.-1080.1920.1040" timestamp="1588836057652" />
+    <state x="553" y="-831" key="Vcs.Push.Dialog.v2" timestamp="1588841990462">
+      <screen x="1" y="-1080" width="1920" height="1040" />
+    </state>
+    <state x="553" y="-831" key="Vcs.Push.Dialog.v2/0.0.1280.680/1.-1080.1920.1040@1.-1080.1920.1040" timestamp="1588841990462" />
+    <state x="274" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1588886212264">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="274" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1280.680@0.0.1280.680" timestamp="1588886212264" />
+    <state width="600" height="440" key="javadoc.popup" timestamp="1588841994135">
+      <screen x="1" y="-1080" width="1920" height="1040" />
+    </state>
+    <state width="600" height="440" key="javadoc.popup/0.0.1280.680/1.-1080.1920.1040@1.-1080.1920.1040" timestamp="1588841994135" />
     <state x="617" y="-299" key="run.anything.popup" timestamp="1588337082656">
       <screen x="1" y="-1080" width="1920" height="1040" />
     </state>
     <state x="617" y="-299" key="run.anything.popup/0.0.1280.680/1.-1080.1920.1040@1.-1080.1920.1040" timestamp="1588337082656" />
-    <state x="624" y="-855" width="672" height="678" key="search.everywhere.popup" timestamp="1588249179106">
-      <screen x="1" y="-1080" width="1920" height="1040" />
+    <state x="415" y="147" width="672" height="444" key="search.everywhere.popup" timestamp="1588882904734">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="624" y="-855" width="672" height="678" key="search.everywhere.popup/0.0.1280.680/1.-1080.1920.1040@1.-1080.1920.1040" timestamp="1588249179106" />
+    <state x="415" y="147" width="672" height="444" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1588882904734" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/redux/GetSliderData/actions.js</url>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

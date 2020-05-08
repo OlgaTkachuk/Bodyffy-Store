@@ -17,7 +17,7 @@ class Cart extends Component {
     handleMinus(event) {
         let slugToUpdate=event.target.id
         let operator = 'minus'
-      this.props.updateProductAmount(slugToUpdate, operator)
+        this.props.updateProductAmount(slugToUpdate, operator)
     }
     handlePlus(event) {
         let slugToUpdate=event.target.id
