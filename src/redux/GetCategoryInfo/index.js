@@ -13,9 +13,7 @@ export class CategoryService {
 
     getCategoryProductsList = () => async (dispatch, getState) => {
         const state = getState();
-        console.log(state);
         const categorySlug = state.categoryInfo.categorySlug;
-        const activeCollection = state.categoryInfo.activeCollection;
         try {
             await dispatch(actions.getCategoryProductsAttempt());
             const response = await Client.getEntries({
@@ -23,50 +21,44 @@ export class CategoryService {
                 'fields.category': categorySlug,
             });
 
-            const category_photos = response.items.reduce((photosArr, photoObject) => {
-                photosArr.push(photoObject.fields.photos[0].fields.file.url);
-                return photosArr;
-            }, []);
+            const {category_slugs, category_photos, category_title, category_collections, collections_photos, collections} =
+                response.items.reduce((acc, item) => {
+                        acc.category_photos.push(item.fields.photos[0].fields.file.url);
+                        acc.category_slugs.push(item.fields.slug)
 
-            const category_slugs = response.items.reduce((slugsArr, slug) => {
-                slugsArr.push(slug.fields.slug);
-                return slugsArr;
-            }, []);
+                        if (!acc.category_title.includes(item.fields.categoryName)) {
+                            acc.category_title.push(item.fields.categoryName);
+                        }
 
-            const category_title = response.items.reduce((titles, item) => {
-                if (!titles.includes(item.fields.categoryName)) {
-                    titles.push(item.fields.categoryName);
-                }
-                return titles
-            }, []);
+                        if (!acc.category_collections.includes(item.fields.collection)) {
+                            acc.category_collections.push(item.fields.collection);
+                        }
 
-            const category_collections = response.items.reduce((collectionsArr, coll) => {
-                if (!collectionsArr.includes(coll.fields.collection)) {
-                    collectionsArr.push(coll.fields.collection);
-                }
-                return collectionsArr;
-            }, []);
+                        if (!acc.collections_photos.includes(item.fields.collectionPhoto.fields.file.url)) {
+                            acc.collections_photos.push(item.fields.collectionPhoto.fields.file.url);
+                        }
 
-            const collections_photos = response.items.reduce((photosArr, photoObject) => {
-                if (!photosArr.includes(photoObject.fields.collectionPhoto.fields.file.url)) {
-                    photosArr.push(photoObject.fields.collectionPhoto.fields.file.url);
-                }
-                return photosArr;
-            }, []);
-            const collections = response.items.reduce((collArr, item) => {
-                if (!collArr.includes({
-                    collection_name: item.fields.collection,
-                    collections_photo: item.fields.collectionPhoto.fields.file.url
-                })) {
-                    collArr.push({
-                        collection_name: item.fields.collection,
-                        collections_photo: item.fields.collectionPhoto.fields.file.url
+                        if (!acc.collections.includes({
+                            collection_name: item.fields.collection,
+                            collections_photo: item.fields.collectionPhoto.fields.file.url
+                        })) {
+                            acc.collections.push({
+                                collection_name: item.fields.collection,
+                                collections_photo: item.fields.collectionPhoto.fields.file.url
+                            });
+                        }
+
+                        return acc;
+                    },
+                    {
+                        category_photos: [],
+                        category_slugs: [],
+                        category_title: [],
+                        category_collections: [],
+                        collections_photos: [],
+                        collections: []
                     });
-                }
-                return collArr;
-            }, []);
 
-            console.log(collections);
 
             await dispatch(actions.getCategoryProductsSuccess({
                 category_photos,
@@ -85,7 +77,7 @@ export class CategoryService {
                 collections
             };
         } catch (err) {
-            await dispatch(actions.getCategoryProductsFail());
+            await dispatch(actions.getCategoryProductsFail(err));
             return err;
         }
     };
@@ -98,18 +90,18 @@ export class CategoryService {
             const response = await Client.getEntries({
                 'content_type': 'bodyffyStore',
                 'fields.category': categorySlug,
-                'fields.collection' : activeCollection
+                'fields.collection': activeCollection
             });
 
-            const category_photos = response.items.reduce((photosArr, photoObject) => {
-                photosArr.push(photoObject.fields.photos[0].fields.file.url);
-                return photosArr;
-            }, []);
-
-            const category_slugs = response.items.reduce((slugsArr, slug) => {
-                slugsArr.push(slug.fields.slug);
-                return slugsArr;
-            }, []);
+            const {category_photos, category_slugs} =
+                response.items.reduce((acc, item) => {
+                    acc.category_photos.push(item.fields.photos[0].fields.file.url);
+                    acc.category_slugs.push(item.fields.slug);
+                    return acc
+                }, {
+                    category_photos: [],
+                    category_slugs: []
+                })
 
             await dispatch(actions.getCollectionProductsSuccess({
                 category_photos,
@@ -120,11 +112,10 @@ export class CategoryService {
                 category_slugs,
             };
         } catch (err) {
-            await dispatch(actions.getCollectionProductsFail());
+            await dispatch(actions.getCollectionProductsFail(err));
             return err;
         }
     };
 }
-
 
 export default CategoryService.getInstance();

@@ -25,8 +25,9 @@ const getCategoryProductsSuccess = (payload) => ({
     type: GET_CATEGORY_PRODUCTS_SUCCESS,
     payload
 });
-const getCategoryProductsFail = () => ({
+const getCategoryProductsFail = (payload) => ({
     type: GET_CATEGORY_PRODUCTS_FAIL,
+    payload
 });
 const getCollectionProductsAttempt = () => ({
     type: GET_COLLECTION_PRODUCTS_ATTEMPT
@@ -36,8 +37,9 @@ const getCollectionProductsSuccess = (payload) => ({
     type: GET_COLLECTION_PRODUCTS_SUCCESS,
     payload
 });
-const getCollectionProductsFail = () => ({
+const getCollectionProductsFail = (payload) => ({
     type: GET_COLLECTION_PRODUCTS_FAIL,
+    payload
 });
 
 export default {
