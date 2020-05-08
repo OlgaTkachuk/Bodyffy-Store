@@ -20,9 +20,6 @@ export class Cart {
 
     addToCart = () => async (dispatch, getState) => {
         const {prodInfo, cart: {cart}} = getState();
-        console.log('))))))))))))))))))))))))))))))))');
-        console.log(prodInfo);
-        console.log('))))))))))))))))))))))))))))))))');
         const productSlug = prodInfo.product;
         const title = prodInfo.title;
         const amount = prodInfo.currentAmount;
