@@ -2,6 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="873279fe-7677-414f-a44a-75f452ad5508" name="Default Changelist" comment="started making custom slider">
+      <change afterPath="$PROJECT_DIR$/src/Components/basic/ResponsiveSlider/ResponsiveSliderSlyle.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/logo.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/basic/Logo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/basic/Logo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/basic/NavLinks.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/basic/NavLinks.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/basic/ResponsiveSlider.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/basic/ResponsiveSlider/ResponsiveSlider.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/basic/SearchBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/basic/SearchBar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/basic/Test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/pages/Home/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/pages/Home/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/pages/ProductPage/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/pages/ProductPage/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/pages/ShoppingCart/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/pages/ShoppingCart/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/redux/ManageShoppingCart/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/ManageShoppingCart/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -13,8 +27,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
-        <option value="SCSS File" />
         <option value="JavaScript File" />
+        <option value="SCSS File" />
       </list>
     </option>
   </component>
@@ -51,8 +65,11 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/assets/images" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.standard" value="project" />
     <property name="node.js.selected.package.eslint" value="E:\Programming\javascript\ss-store\node_modules\eslint" />
+    <property name="node.js.selected.package.standard" value="" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -60,17 +77,17 @@
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2020.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\Programming\javascript\ss-store\src\Components\basic\" />
-      <recent name="E:\Programming\javascript\ss-store\src\Components\basic" />
-      <recent name="E:\Programming\javascript\ss-store\src\Components\pages\Signin" />
-      <recent name="E:\Programming\javascript\ss-store\src\Components\pages\ShoppingCart" />
-      <recent name="E:\Programming\javascript\ss-store\src\Components\pages\Register" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\Programming\javascript\ss-store\src\assets\images" />
       <recent name="E:\Programming\javascript\ss-store\src\images" />
       <recent name="E:\Programming\javascript\ss-store\src" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Programming\javascript\ss-store\src\Components\basic\ResponsiveSlider" />
+      <recent name="E:\Programming\javascript\ss-store\src\Components\basic\" />
+      <recent name="E:\Programming\javascript\ss-store\src\Components\basic" />
+      <recent name="E:\Programming\javascript\ss-store\src\Components\pages\Signin" />
+      <recent name="E:\Programming\javascript\ss-store\src\Components\pages\ShoppingCart" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -118,7 +135,7 @@
       <workItem from="1588258577048" duration="3049000" />
       <workItem from="1588329587313" duration="23994000" />
       <workItem from="1588784413127" duration="26636000" />
-      <workItem from="1588873160369" duration="34990000" />
+      <workItem from="1588873160369" duration="53158000" />
     </task>
     <task id="LOCAL-00001" summary="redux test">
       <created>1586365361016</created>
@@ -178,6 +195,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="started making custom slider" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="706" y="-823" key="#ESLint" timestamp="1589025885263">
+      <screen x="1" y="-1080" width="1920" height="1040" />
+    </state>
+    <state x="706" y="-823" key="#ESLint/0.0.1280.680/1.-1080.1920.1040@1.-1080.1920.1040" timestamp="1589025885263" />
     <state x="335" y="-805" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1588248132742">
       <screen x="1" y="-1080" width="1920" height="1040" />
     </state>

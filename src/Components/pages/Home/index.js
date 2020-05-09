@@ -4,7 +4,7 @@ import NavLinks from "../../basic/NavLinks";
 import Banner from "../../basic/Banner";
 import WhiteCard1 from "../../basic/WhiteCard1";
 import BlockMenu from "../../basic/BlockMenu";
-import ResponsiveSlider from "../../basic/ResponsiveSlider";
+import ResponsiveSlider from "../../basic/ResponsiveSlider/ResponsiveSlider";
 import Footer from "../../basic/Footer";
 
 
@@ -40,13 +40,17 @@ const Home = ({getSlidersList, sliders}) => {
             </div>
             <Banner/>
 
+            <div className={'slider-wrapper'}>
             <div className={'block-menu-title'}><h3>New Arrivals</h3></div>
             <div className='par-center'><p>Explore our newest products</p></div>
             <ResponsiveSlider photos={data_two.photos} links={data_two.links}/>
-
+            </div>
+            <div className={'divider-line'}/>
+            <div className={'slider-wrapper'}>
             <div className={'block-menu-title'}><h3>New Arrivals</h3></div>
             <div className='par-center'><p>Explore our newest products</p></div>
             <ResponsiveSlider photos={data_three.photos} links={data_three.links}/>
+            </div>
             <Footer/>
         </>
     );

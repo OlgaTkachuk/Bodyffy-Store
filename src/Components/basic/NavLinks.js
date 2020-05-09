@@ -20,7 +20,6 @@ class NavLinks extends Component {
     toggleLanguage = lang => {
         this.setState({selectedLanguage: lang});
     }
-    navbar_coll_x;
 
     handleMouseHover() {
         this.setState(this.toggleHoverState);

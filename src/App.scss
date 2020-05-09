@@ -1,8 +1,14 @@
+$font-basic: 'Montserrat', sans-serif;
+$green: #004731;
+$gold: #b58d3c;
+$white: #ffffff;
+$black: #000000;
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
+    font-family: $font-basic;
     font-weight: 300;
 
     /*background: #000 !important;*/
@@ -33,7 +39,7 @@ body {
 .navbar {
     max-width: 100%;
     padding: auto;
-    background: white;
+    background: $white;
     height: 50px;
 }
 
@@ -65,15 +71,15 @@ body {
     overflow: hidden;
     list-style-type: none;
     z-index: 2;
-    background-color: white;
 }
 
 .nav-links a {
     display: block;
     text-decoration: none;
     padding: 1rem 0;
-    color: black;
+    color: $black;
     text-align: center;
+    font-weight: bold;
     font-size: 0.875rem;
 }
 
@@ -87,7 +93,7 @@ body {
     width: 70vw;
     right: 0;
     padding-top: 20px;
-    background-color: white;
+    background-color: $white;
     position: fixed;
     bottom: 0;
     z-index: 2;
@@ -105,7 +111,7 @@ body {
     }
 
     .logo {
-        max-height: 30px;
+        height: 100px;
     }
 
     .nav-center {
@@ -127,11 +133,11 @@ body {
         margin: 0.75rem 1rem;
     }
 
-    .nav-links li:hover a {
-        cursor: pointer;
-        border-bottom: 2px solid #569EB6;
-        transition: color 0.3s;
-    }
+    /*.nav-links li:hover a {*/
+    /*    cursor: pointer;*/
+    /*    border-bottom: 2px solid #569EB6;*/
+    /*    transition: color 0.3s;*/
+    /*}*/
 }
 
 .dropdown-container {
@@ -143,7 +149,7 @@ body {
         display: none;
         width: 500px;
         height: 315px;
-        background-color: white;
+        background-color: $white;
         position: absolute;
         right: 20%;
     }
@@ -156,7 +162,7 @@ body {
     }
 
     .dropdown-container li:hover {
-        background-color: #e0e0e0;
+        background-color: $white;
     }
 
     .dropdown-wrapper:hover .dropdown-container {
@@ -177,7 +183,7 @@ body {
 
 /*SEARCH BAR*/
 .logo {
-    max-height: 50px;
+    max-height: 60px;
     flex: 4;
     overflow-x: auto;
     margin-top: 10px;
@@ -188,6 +194,7 @@ body {
     /*justify-content: space-between;*/
     max-width: 100%;
     overflow-x: auto;
+    background: $white;
 }
 
 .search-bar {
@@ -199,13 +206,14 @@ body {
 
 .search-bar:hover input {
     /*border-bottom: 1px solid #569EB6;*/
-    border-bottom: 1px solid #004731;
+    /*border-bottom: 1px solid #004731;*/
     min-width: 250px;
 }
 
 .right-bar {
     display: flex;
     justify-content: flex-end;
+    //padding-right: 20px;
     flex: 1;
     overflow-x: auto
 }
@@ -245,8 +253,8 @@ body {
     }
 
     .search-container input {
-        border-bottom: 1px solid #004731;
-        transition: color 0.3s, background 0.3s;
+        //border-bottom: 1px solid $green;
+        //transition: color 0.3s, background 0.3s;
         width: 60vw;
     }
 
@@ -266,7 +274,7 @@ body {
 
 .banner-img {
     width: 99vw;
-    background-color:  #004731;
+    background-color:  $green;
     height: 90vh;
 }
 
@@ -282,7 +290,7 @@ body {
 .search-bar-focus {
     width: 80vw;
     height: 50px;
-    border: 1px solid black;
+    border: 1px solid $black;
     font-size: 1.7rem;
     border-radius: 3px;
     padding-left: 10px;
@@ -310,7 +318,7 @@ body {
 }
 
 ul.suggestions li:hover {
-    background-color: #e0e0e0;
+    background-color: $white;
     cursor: pointer;
     transition: 0.3s all;
 }
@@ -362,7 +370,7 @@ section {
 }
 
 .banner-white-card {
-    background-color: white;
+    background-color: $white;
     position: absolute;
     right: 5vw;
     top: 5vw;
@@ -384,20 +392,20 @@ section {
 
 .link-white-card {
     text-decoration: none;
-    color: black;
+    color: $black;
     padding: 0;
     margin: 0;
 }
 
 .link-white-card p {
     padding: 7px 7px 0 0;
-    border-bottom: 3px solid #c2865c;
+    border-bottom: 3px solid $gold;
     width: 120px;
     margin: 20px 0;
 }
 
 .link-white-card:hover {
-    color: #c2865c;
+    color: $gold;
     transition: 0.5s;
 }
 
@@ -419,7 +427,7 @@ section {
     margin: 0 auto 20px auto;
     width: 45vw;
     height: 45vw;
-    background:  #c2865c;
+    background:  $gold;
 }
 
 .block-menu-title {
@@ -489,7 +497,7 @@ section {
 
 .par-center {
     font-size: 0.875rem;
-    margin: 1rem auto;
+    margin: 1rem auto 3rem;
     text-align: center;
 }
 .slide-image-wider {
@@ -520,7 +528,7 @@ footer {
     height: 20vh;
     margin-top: 3rem;
     padding-top: 3rem;
-    border-top: 4px solid  #004731;
+    border-top: 4px solid  $green;
 
 }
 
@@ -590,7 +598,7 @@ footer {
     margin: 0 auto 20px auto;
     width: 22vw;
     height: 22vw;
-    background:  #004731;
+    background:  $green;
 }
 
 .categories-title {
@@ -671,16 +679,16 @@ footer {
     position: relative;
     margin: 16px 0 24px;
     line-height: 24px;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid $black;
 }
 .form-header {
     margin-bottom: 20px;
 }
 
 .button-form {
-    background-color:  #004731;
+    background-color:  $green;
     padding: 19.5px 24px;
-    color: white;
+    color: $white;
     font-size: 0.875rem;
     text-decoration: none;
     text-align: center;
@@ -741,7 +749,7 @@ footer {
     margin: 1rem 2rem;
 }
 .checkout-form {
-    background-color: #f5f5f5;
+    background-color: $white;
     width: 400px;
     padding: 30px;
     margin-top: 20px;
@@ -761,7 +769,7 @@ footer {
 }
 
 .cart-title {
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid $black;
     padding: 8px;
     margin-bottom: 2rem;
     font-size: 1.6rem;
@@ -778,7 +786,7 @@ select {
 }
 select option{
     outline: none;
-    border: #e0e0e0;
+    border: $white;
 }
 
 .quantity-bar {
@@ -786,20 +794,20 @@ select option{
     align-items: center;
 }
 .checkout-button {
-    background-color: black;
+    background-color: $black;
     padding: 14px 20px;
     font-size: 1rem;
     width: 100%;
 }
 .checkout-button:hover {
-    background-color:  #004731;
+    background-color:  $green;
 }
 .summary-title {
     font-weight: 600;
     margin-bottom: 2rem ;
 }
 .total{
-    border-top: 1px solid black;
+    border-top: 1px solid $black;
     display: flex;
     justify-content: space-between;
     padding-top: 10px;
@@ -825,7 +833,7 @@ select option{
     display: flex;
     padding-top: 1rem;
     padding-bottom: 1rem;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid $black;
 
 }
 
@@ -877,4 +885,12 @@ select option{
 
 .disable-button {
     pointer-events: none;
+}
+
+.slider-wrapper {
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+}
+.divider-line {
+    border-bottom: 1px solid lightgray;
 }

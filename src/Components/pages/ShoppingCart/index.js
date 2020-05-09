@@ -4,7 +4,7 @@ import NavLinks from "../../basic/NavLinks";
 import Footer from "../../basic/Footer";
 import Cart from "../../basic/Cart";
 import Summary from "../../basic/Summary";
-import ResponsiveSlider from "../../basic/ResponsiveSlider";
+import ResponsiveSlider from "../../basic/ResponsiveSlider/ResponsiveSlider";
 
 class ShoppingCart extends Component {
 

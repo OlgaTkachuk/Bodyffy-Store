@@ -7,7 +7,7 @@ import Banner from "../../basic/Banner";
 import Footer from "../../basic/Footer";
 import rightArrow from '../../../assets/images/next.svg'
 import leftArrow from '../../../assets/images/previous.svg'
-import ResponsiveSlider from "../../basic/ResponsiveSlider";
+import ResponsiveSlider from "../../basic/ResponsiveSlider/ResponsiveSlider";
 
 class Product extends Component {
     componentDidMount() {
