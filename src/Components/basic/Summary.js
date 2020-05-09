@@ -1,9 +1,7 @@
 import React, {Component} from 'react';
+import {Link, NavLink} from "react-router-dom";
 
 class Summary extends Component {
-    constructor(props) {
-        super(props);
-    }
     render() {
         console.log(this.props.total);
         return (
@@ -19,7 +17,7 @@ class Summary extends Component {
                         <p className={'small-text total-text'}>Total</p>
                         <p className={'small-text total-text'}> ${this.props.total}</p>
                     </div>
-                    <button type={'submit'} className={'button-form checkout-button'}>Checkout</button>
+                    <NavLink to="/order" type={'submit'} className={'button-form checkout-button'}>Checkout</NavLink>
                 </form>
             </div>
         );

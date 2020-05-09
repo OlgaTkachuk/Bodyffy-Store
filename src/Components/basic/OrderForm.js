@@ -1,31 +1,46 @@
 import React, {Component} from 'react';
-// import * as emailjs from 'emailjs-com';
+
+import * as emailjs from 'emailjs-com';
 
 
 class OrderForm extends Component {
-    constructor() {
-        super();
-        this.state= {
+    constructor(props) {
+        super(props);
+        this.state = {
             name: '',
             email: '',
             phone: '',
             city: '',
             shipping: 'Nova Poshta',
+            address: '',
+            cart: JSON.stringify(this.props.cart, null, 2),
+            total: this.props.total
 
         }
+
         this.handleShipping = this.handleShipping.bind(this);
-        // this.handleSubmit = this.handleSubmit.bind(this);
+        this.handleSubmit = this.handleSubmit.bind(this);
         this.handleName = this.handleName.bind(this);
         this.handleEmail = this.handleEmail.bind(this);
-        // this.handleCompany = this.handleCompany.bind(this);
         this.handleCity = this.handleCity.bind(this);
-        // this.handleFile = this.handleFile.bind(this);
         this.handlePhone = this.handlePhone.bind(this);
+        this.handleAddress = this.handleAddress.bind(this);
     }
+
+    componentDidMount() {
+        console.log(this.props.cart);
+    }
+
     handleShipping(event) {
         this.setState({
             shipping: event.target.value
         });
+    }
+
+    handleAddress(event) {
+        this.setState({
+            address: event.target.value
+        })
     }
 
     handleName(event) {
@@ -53,7 +68,8 @@ class OrderForm extends Component {
         });
     }
 
-    static sender = 'olgatk01@gmail.com';
+    // static sender = 'olgatk01@gmail.com';
+
     handleSubmit(event) {
         event.preventDefault();
 
@@ -62,18 +78,8 @@ class OrderForm extends Component {
         //     REACT_APP_EMAILJS_TEMPLATEID: template
         // } = this.props.env;
 
-        this.sendMessage(
-            this.state.message,
-            this.state.name,
-            this.state.company,
-            this.state.phone,
-            this.state.country,
-            this.state.email
-        );
+        this.sendMessage();
 
-        this.setState({
-            formSubmitted: true
-        });
     }
 
     sendMessage(templateId, senderEmail, receiverEmail, message, name, company, country, email, file) {
@@ -88,17 +94,20 @@ class OrderForm extends Component {
         // let service_id = "default_service";
         // let template_id = "template_fjMPvORY";
         // let user_id = "user_HhA5epB1UYyjVtpzFdDan";
-    //     emailjs.send("mailjet", "template_fjMPvORY", {
-    //         "email": this.state.email,
-    //         "name": this.state.name,
-    //         "city": this.state.city,
-    //         "phone": this.state.phone,
-    //         "shipping": this.state.shipping
-    //     }, "user_HhA5epB1UYyjVtpzFdDan")
-    //         .then(res => {
-    //             console.log("message sent")
-    //         })
-    //         .catch(err => console.error('Failed to send feedback. Error: ', err));
+            emailjs.send("mailjet", "bodyffyorder", {
+                "email": this.state.email,
+                "name": this.state.name,
+                "city": this.state.city,
+                "phone": this.state.phone,
+                "shipping": this.state.shipping,
+                "address": this.state.address,
+                "cart": this.state.cart,
+                "total": this.state.total
+            }, "user_HhA5epB1UYyjVtpzFdDan")
+                .then(res => {
+                    console.log("message sent")
+                })
+                .catch(err => console.error('Failed to send feedback. Error: ', err));
     }
 
     render() {
@@ -114,9 +123,11 @@ class OrderForm extends Component {
                     <input type="text" value={this.state.city} onChange={this.handleCity}
                            placeholder={'city'}/>
                     <input onChange={this.handleShipping} placeholder={'shipping'}
-                              value={this.state.shipping}/>
+                           value={this.state.shipping}/>
+                    <input onChange={this.handleAddress} placeholder={'address'}
+                           value={this.state.address}/>
                     <button type="submit" onSubmit={this.handleSubmit} className="button-dark button-form">
-                        {'send_mess'}
+                        {'send order'}
                     </button>
                 </form>
             </div>

@@ -17,8 +17,9 @@ const changeAmount = (newCount) => ({
     type: CHANGE_AMOUNT,
     newCount
 });
-const getProductFail = () => ({
+const getProductFail = (payload) => ({
     type: GET_PRODUCT_FAIL,
+    payload
 });
 const setActiveProductSlug = (productSlug) => ({
     type: SET_ACTIVE_PRODUCT_SLUG,

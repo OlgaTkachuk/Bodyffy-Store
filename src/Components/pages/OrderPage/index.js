@@ -2,23 +2,22 @@ import React, {Component} from 'react';
 import Header from "../../basic/Header";
 import NavLinks from "../../basic/NavLinks";
 import Footer from "../../basic/Footer";
-import Cart from "../../basic/Cart";
-import Summary from "../../basic/Summary";
 import OrderForm from "../../basic/OrderForm";
 
-class ShoppingCart extends Component {
+class OrderPage extends Component {
 
     render() {
-        // const {total, cart} = this.props.cart
+        const {cart, total} = this.props.cart;
+        console.log(cart, total, 'CART TOTAL');
         return (
             <div>
                 <Header/>
                 <NavLinks/>
-                <OrderForm/>
+                <OrderForm cart={cart} total={total}/>
                 <Footer/>
             </div>
         );
     }
 }
 
-export default ShoppingCart;
+export default OrderPage;

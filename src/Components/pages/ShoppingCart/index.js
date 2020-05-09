@@ -4,6 +4,7 @@ import NavLinks from "../../basic/NavLinks";
 import Footer from "../../basic/Footer";
 import Cart from "../../basic/Cart";
 import Summary from "../../basic/Summary";
+import ResponsiveSlider from "../../basic/ResponsiveSlider";
 
 class ShoppingCart extends Component {
 
@@ -13,10 +14,15 @@ class ShoppingCart extends Component {
             <div>
                 <Header/>
                 <NavLinks/>
-                <div className={'cart-wrapper'}>
-                    <Cart cart={cart} deleteFromCart={this.props.deleteFromCart} updateProductAmount={this.props.updateProductAmount}/>
-                    <Summary total={total}/>
-                </div>
+                {total ?
+                    (<div className={'cart-wrapper'}>
+                        <Cart cart={cart} deleteFromCart={this.props.deleteFromCart} updateProductAmount={this.props.updateProductAmount}/>
+                        <Summary total={total}/>
+                    </div>)
+                    :
+                    (<div>LOX</div>)
+                }
+
                 <Footer/>
             </div>
         );

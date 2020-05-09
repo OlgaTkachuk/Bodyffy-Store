@@ -25,7 +25,7 @@ const Test = ({getSlidersList, sliders }) => {
             <div className='par-center'> <p>Explore our newest products</p></div>
             {
                 !!homeSlider1?.length && (
-                    <ResponsiveSlider  isFetching={isFetching} error={error} photos={photos} links={homeSlider1[0] && homeSlider1[0].links}/>
+                    <ResponsiveSlider photos={photos} links={homeSlider1[0] && homeSlider1[0].links}/>
                 )
             }
             <div className={'container'}>
