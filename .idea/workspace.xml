@@ -2,7 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="873279fe-7677-414f-a44a-75f452ad5508" name="Default Changelist" comment="started making custom slider">
-      <change beforePath="$PROJECT_DIR$/src/redux/ManageShoppingCart/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/ManageShoppingCart/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/basic/ProductPhotos/ProductPhotosStyle.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/logo_sign.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/basic/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/basic/Footer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/basic/ItemsCollection.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/basic/ItemsCollection.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/basic/NavLinks.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/basic/NavLinks.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/basic/PageCategories.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/basic/PageCategories.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/basic/ProductPhotos.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/basic/ProductPhotos/ProductPhotos.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/pages/CategoryPage/CategoryPageStyle.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/pages/CategoryPage/CategoryPageStyle.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/pages/ProductPage/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/pages/ProductPage/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,8 +23,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
-        <option value="SCSS File" />
         <option value="JavaScript File" />
+        <option value="SCSS File" />
       </list>
     </option>
   </component>
@@ -51,8 +61,11 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/assets/images" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.standard" value="project" />
     <property name="node.js.selected.package.eslint" value="E:\Programming\javascript\ss-store\node_modules\eslint" />
+    <property name="node.js.selected.package.standard" value="" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -61,11 +74,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Programming\javascript\ss-store\src\Components\basic\ProductPhotos" />
+      <recent name="E:\Programming\javascript\ss-store\src\Components\basic\ResponsiveSlider" />
       <recent name="E:\Programming\javascript\ss-store\src\Components\basic\" />
       <recent name="E:\Programming\javascript\ss-store\src\Components\basic" />
       <recent name="E:\Programming\javascript\ss-store\src\Components\pages\Signin" />
-      <recent name="E:\Programming\javascript\ss-store\src\Components\pages\ShoppingCart" />
-      <recent name="E:\Programming\javascript\ss-store\src\Components\pages\Register" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\Programming\javascript\ss-store\src\assets\images" />
@@ -118,7 +131,8 @@
       <workItem from="1588258577048" duration="3049000" />
       <workItem from="1588329587313" duration="23994000" />
       <workItem from="1588784413127" duration="26636000" />
-      <workItem from="1588873160369" duration="34990000" />
+      <workItem from="1588873160369" duration="53934000" />
+      <workItem from="1589096751686" duration="32535000" />
     </task>
     <task id="LOCAL-00001" summary="redux test">
       <created>1586365361016</created>
@@ -178,6 +192,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="started making custom slider" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="706" y="-823" key="#ESLint" timestamp="1589025885263">
+      <screen x="1" y="-1080" width="1920" height="1040" />
+    </state>
+    <state x="706" y="-823" key="#ESLint/0.0.1280.680/1.-1080.1920.1040@1.-1080.1920.1040" timestamp="1589025885263" />
     <state x="335" y="-805" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1588248132742">
       <screen x="1" y="-1080" width="1920" height="1040" />
     </state>
@@ -186,10 +204,11 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="262" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1588964008281" />
-    <state x="741" y="-805" key="FileChooserDialogImpl" timestamp="1588165944766">
-      <screen x="1" y="-1080" width="1920" height="1040" />
+    <state x="493" y="180" key="FileChooserDialogImpl" timestamp="1589124768279">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="741" y="-805" key="FileChooserDialogImpl/0.0.1280.680/1.-1080.1920.1040@1.-1080.1920.1040" timestamp="1588165944766" />
+    <state x="493" y="180" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1589124768279" />
     <state x="462" y="-915" key="SettingsEditor" timestamp="1588836057652">
       <screen x="1" y="-1080" width="1920" height="1040" />
     </state>
@@ -210,14 +229,15 @@
       <screen x="1" y="-1080" width="1920" height="1040" />
     </state>
     <state width="600" height="440" key="javadoc.popup/0.0.1280.680/1.-1080.1920.1040@1.-1080.1920.1040" timestamp="1588841994135" />
-    <state x="617" y="-299" key="run.anything.popup" timestamp="1588337082656">
-      <screen x="1" y="-1080" width="1920" height="1040" />
-    </state>
-    <state x="617" y="-299" key="run.anything.popup/0.0.1280.680/1.-1080.1920.1040@1.-1080.1920.1040" timestamp="1588337082656" />
-    <state x="415" y="147" width="672" height="444" key="search.everywhere.popup" timestamp="1588882904734">
+    <state x="411" y="511" key="run.anything.popup" timestamp="1589137543079">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="624" y="-855" width="672" height="678" key="search.everywhere.popup/0.0.1280.680/1.-1080.1920.1040@1.-1080.1920.1040" timestamp="1588249179106" />
+    <state x="411" y="511" key="run.anything.popup/0.0.1280.680/1.-1080.1920.1040@0.0.1280.680" timestamp="1589137543079" />
+    <state x="617" y="-299" key="run.anything.popup/0.0.1280.680/1.-1080.1920.1040@1.-1080.1920.1040" timestamp="1588337082656" />
+    <state x="624" y="-855" width="672" height="678" key="search.everywhere.popup" timestamp="1589104348916">
+      <screen x="1" y="-1080" width="1920" height="1040" />
+    </state>
+    <state x="624" y="-855" width="672" height="678" key="search.everywhere.popup/0.0.1280.680/1.-1080.1920.1040@1.-1080.1920.1040" timestamp="1589104348916" />
     <state x="415" y="147" width="672" height="444" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1588882904734" />
   </component>
   <component name="XDebuggerManager">

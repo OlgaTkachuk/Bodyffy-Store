@@ -13,18 +13,16 @@ class ItemsCollection extends Component {
             return <p>Загрузка...</p>
         } else
             return (
-                <div className={'items-collection'}>
-                    <div className={'coll-wrapper-outer'}>
+                <div>
                         <div className={'coll-wrapper'}>
                             {photos.map((i, index) =>
-                            <div className={'item-coll'} key={index}>
-                                <Link to={`/item/${category_slugs[index]}`}>
+                            <div  key={index} className={'collection-item'}>
+                                <Link to={`/item/${category_slugs[index]}`} >
                                     <img src={i} className={'item-img'}/>
                                 </Link>
                             </div>
                             )}
                         </div>
-                    </div>
                 </div>
                 )
     }

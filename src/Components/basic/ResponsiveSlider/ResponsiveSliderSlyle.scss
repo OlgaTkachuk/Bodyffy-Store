@@ -1,0 +1,13 @@
+@import "src/App";
+.slider-img {
+  width: 30vw;
+  @media screen and(max-width: 899px) {
+    width: 45vw;
+  }
+  @media screen and (max-width: 599px) {
+    width: 90vw;
+  }
+}
+.my-button {
+  color: $green;
+}

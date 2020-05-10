@@ -1,0 +1,18 @@
+
+
+.slider-container {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+}
+.slide-image {
+  @media screen and (max-width: 720px) {
+    flex: 75%;
+    max-width: 75vw;
+  }
+  @media screen and (min-width: 721px) and (max-width: 1099px){
+    max-width: 40vw;
+  }
+  max-width: 45vw;
+  max-height: 60vh;
+}

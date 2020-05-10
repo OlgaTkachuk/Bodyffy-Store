@@ -20,7 +20,6 @@ class NavLinks extends Component {
     toggleLanguage = lang => {
         this.setState({selectedLanguage: lang});
     }
-    navbar_coll_x;
 
     handleMouseHover() {
         this.setState(this.toggleHoverState);
@@ -60,6 +59,7 @@ class NavLinks extends Component {
                         </ul>
                     </div>
                 </nav>
+                {/*<div className={'divider-line-bold'}/>*/}
 
             </>
         );

@@ -66,24 +66,25 @@ class SearchBar extends Component {
         }
         return (
             <React.Fragment>
-                <div className={showOptions ? "hovering-search-container" : "search-bar"}>
-                    <div className={showOptions ? "search-icon-container-focus search-icon": "search-icon-container"}>
-                        <FiSearch size={18} color={'#3f3f3f'} className={showOptions ? "hide" : ""}/>
-                        <FiSearch size={35} color={'#3f3f3f'} className={showOptions ? "" : "hide"}/>
-                    </div>
-                    {/*<div className={showOptions ? "search-container-focus":"search-container"}>*/}
-                    <input type={"text"}
-                           className={showOptions ? "search-bar-focus" : "search-bar-input"}
-                           onChange={onChangeHandler}
-                           value={userSearchInput}
-                           placeholder="Що Ви шукаєте?"
-                    />
-                    {/*</div>*/}
-                    <button className={showOptions ? "search-icon-container-focus" : "hide"} onClick={deleteSearch}>
-                        <FiX size={35} color='#000000'/>
-                    </button>
-                    {optionList}
-                </div>
+                {/*<div className={showOptions ? "hovering-search-container" : "search-bar"}>*/}
+                {/*    <div className={showOptions ? "search-icon-container-focus search-icon": "search-icon-container"}>*/}
+                {/*        <FiSearch size={18} color={'#3f3f3f'} className={showOptions ? "hide" : ""}/>*/}
+                {/*        <FiSearch size={35} color={'#3f3f3f'} className={showOptions ? "" : "hide"}/>*/}
+                {/*    </div>*/}
+                {/*    /!*<div className={showOptions ? "search-container-focus":"search-container"}>*!/*/}
+                {/*    <input type={"text"}*/}
+                {/*           className={showOptions ? "search-bar-focus" : "search-bar-input"}*/}
+                {/*           onChange={onChangeHandler}*/}
+                {/*           value={userSearchInput}*/}
+                {/*           placeholder="Що Ви шукаєте?"*/}
+                {/*    />*/}
+                {/*    /!*</div>*!/*/}
+                {/*    <button className={showOptions ? "search-icon-container-focus" : "hide"} onClick={deleteSearch}>*/}
+                {/*        <FiX size={35} color='#000000'/>*/}
+                {/*    </button>*/}
+                {/*    {optionList}*/}
+                {/*</div>*/}
+                <div className={"search-bar"}></div>
             </React.Fragment>
         );
     }

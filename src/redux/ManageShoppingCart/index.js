@@ -19,7 +19,7 @@ export class Cart {
     }
 
     addToCart = () => async (dispatch, getState) => {
-        const {prodInfo, cart: {cart}} = getState();
+        const {prodInfo, cart: {cart}} = getState();    // const state = getState(); const prodInfo = state.prodInfo; const cart = state.cart.cart
         const productSlug = prodInfo.product;
         const title = prodInfo.title;
         const amount = prodInfo.currentAmount;
@@ -46,7 +46,7 @@ export class Cart {
     };
 
     updateProductAmount = (slugToUpdate, operator) => async (dispatch, getState) => {
-        const {cart: {cart}} = getState();
+        const {cart: {cart}} = getState(); // const state = getState; const cart = state.cart.cart
 
         cart.map((product) => {
             if (product.productSlug === slugToUpdate) {
