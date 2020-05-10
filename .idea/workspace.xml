@@ -2,21 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="873279fe-7677-414f-a44a-75f452ad5508" name="Default Changelist" comment="started making custom slider">
-      <change afterPath="$PROJECT_DIR$/src/Components/basic/ResponsiveSlider/ResponsiveSliderSlyle.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/logo.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/basic/ProductPhotos/ProductPhotosStyle.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/logo_sign.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/basic/Logo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/basic/Logo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/basic/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/basic/Footer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/basic/ItemsCollection.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/basic/ItemsCollection.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/basic/NavLinks.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/basic/NavLinks.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/basic/ResponsiveSlider.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/basic/ResponsiveSlider/ResponsiveSlider.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/basic/SearchBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/basic/SearchBar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/basic/Test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/pages/Home/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/pages/Home/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/basic/PageCategories.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/basic/PageCategories.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/basic/ProductPhotos.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/basic/ProductPhotos/ProductPhotos.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/pages/CategoryPage/CategoryPageStyle.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/pages/CategoryPage/CategoryPageStyle.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/pages/ProductPage/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/pages/ProductPage/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/pages/ShoppingCart/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/pages/ShoppingCart/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/ManageShoppingCart/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/ManageShoppingCart/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,17 +73,17 @@
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2020.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\Programming\javascript\ss-store\src\assets\images" />
-      <recent name="E:\Programming\javascript\ss-store\src\images" />
-      <recent name="E:\Programming\javascript\ss-store\src" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Programming\javascript\ss-store\src\Components\basic\ProductPhotos" />
       <recent name="E:\Programming\javascript\ss-store\src\Components\basic\ResponsiveSlider" />
       <recent name="E:\Programming\javascript\ss-store\src\Components\basic\" />
       <recent name="E:\Programming\javascript\ss-store\src\Components\basic" />
       <recent name="E:\Programming\javascript\ss-store\src\Components\pages\Signin" />
-      <recent name="E:\Programming\javascript\ss-store\src\Components\pages\ShoppingCart" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Programming\javascript\ss-store\src\assets\images" />
+      <recent name="E:\Programming\javascript\ss-store\src\images" />
+      <recent name="E:\Programming\javascript\ss-store\src" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -135,7 +131,8 @@
       <workItem from="1588258577048" duration="3049000" />
       <workItem from="1588329587313" duration="23994000" />
       <workItem from="1588784413127" duration="26636000" />
-      <workItem from="1588873160369" duration="53158000" />
+      <workItem from="1588873160369" duration="53934000" />
+      <workItem from="1589096751686" duration="32535000" />
     </task>
     <task id="LOCAL-00001" summary="redux test">
       <created>1586365361016</created>
@@ -207,10 +204,11 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="262" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1588964008281" />
-    <state x="741" y="-805" key="FileChooserDialogImpl" timestamp="1588165944766">
-      <screen x="1" y="-1080" width="1920" height="1040" />
+    <state x="493" y="180" key="FileChooserDialogImpl" timestamp="1589124768279">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="741" y="-805" key="FileChooserDialogImpl/0.0.1280.680/1.-1080.1920.1040@1.-1080.1920.1040" timestamp="1588165944766" />
+    <state x="493" y="180" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1589124768279" />
     <state x="462" y="-915" key="SettingsEditor" timestamp="1588836057652">
       <screen x="1" y="-1080" width="1920" height="1040" />
     </state>
@@ -231,14 +229,15 @@
       <screen x="1" y="-1080" width="1920" height="1040" />
     </state>
     <state width="600" height="440" key="javadoc.popup/0.0.1280.680/1.-1080.1920.1040@1.-1080.1920.1040" timestamp="1588841994135" />
-    <state x="617" y="-299" key="run.anything.popup" timestamp="1588337082656">
-      <screen x="1" y="-1080" width="1920" height="1040" />
-    </state>
-    <state x="617" y="-299" key="run.anything.popup/0.0.1280.680/1.-1080.1920.1040@1.-1080.1920.1040" timestamp="1588337082656" />
-    <state x="415" y="147" width="672" height="444" key="search.everywhere.popup" timestamp="1588882904734">
+    <state x="411" y="511" key="run.anything.popup" timestamp="1589137543079">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="624" y="-855" width="672" height="678" key="search.everywhere.popup/0.0.1280.680/1.-1080.1920.1040@1.-1080.1920.1040" timestamp="1588249179106" />
+    <state x="411" y="511" key="run.anything.popup/0.0.1280.680/1.-1080.1920.1040@0.0.1280.680" timestamp="1589137543079" />
+    <state x="617" y="-299" key="run.anything.popup/0.0.1280.680/1.-1080.1920.1040@1.-1080.1920.1040" timestamp="1588337082656" />
+    <state x="624" y="-855" width="672" height="678" key="search.everywhere.popup" timestamp="1589104348916">
+      <screen x="1" y="-1080" width="1920" height="1040" />
+    </state>
+    <state x="624" y="-855" width="672" height="678" key="search.everywhere.popup/0.0.1280.680/1.-1080.1920.1040@1.-1080.1920.1040" timestamp="1589104348916" />
     <state x="415" y="147" width="672" height="444" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1588882904734" />
   </component>
   <component name="XDebuggerManager">

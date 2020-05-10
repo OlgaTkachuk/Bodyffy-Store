@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import styles from './ProductPhotosStyle.scss'
 
 class ProductPhotos extends Component {
     state = {
@@ -19,11 +20,11 @@ class ProductPhotos extends Component {
                     if (index === this.state.currPhotoIndex) {
                         return (
                             <>
-                            <button><img src={leftArrow} onClick={this.onLeftArrow} height="50" width="50"/></button>
+                            <button><img src={leftArrow} onClick={this.onLeftArrow} height="30" width="30"/></button>
                             <div>
                                 <img className={'slide-image'} src={el} alt=""/>
                             </div>
-                        <button><img src={rightArrow} onClick={this.onRightArrow} height="50" width="50"/></button>
+                        <button><img src={rightArrow} onClick={this.onRightArrow} height="30" width="30"/></button>
                         </>
                         )
                     }
@@ -35,11 +36,6 @@ class ProductPhotos extends Component {
                 currPhotoIndex: this.state.currPhotoIndex + 1
             })
         }
-        // else if (this.state.currPhotoIndex = this.props.photos.length-1) {
-        //     this.setState({
-        //         currPhotoIndex: this.state.currPhotoIndex + 1
-        //     })
-        // }
 
     }
     onLeftArrow = () => {
@@ -49,22 +45,14 @@ class ProductPhotos extends Component {
             })
         }
     }
-    // return photos.map(el => (
-    //     <div>
-    //         <img className={'slide-image'} src={el} alt=""/>
-    //     </div>
-    // ))
 
 
     render() {
-        const {rightArrow, leftArrow} = this.props
         return (
             <>
                 <div className={'photo-block'}>
                     <div className='slider-container'>
-                        {/*<button><img src={leftArrow} onClick={this.onLeftArrow} height="50" width="50"/></button>*/}
                         {this.renderTemplate()}
-                        {/*<button><img src={rightArrow} onClick={this.onRightArrow} height="50" width="50"/></button>*/}
                     </div>
                 </div>
             </>

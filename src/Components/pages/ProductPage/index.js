@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import ProductPhotos from "../../basic/ProductPhotos";
+import ProductPhotos from "../../basic/ProductPhotos/ProductPhotos";
 import ProductInfo from "../../basic/ProductInfo";
 import Header from "../../basic/Header";
 import NavLinks from "../../basic/NavLinks";
@@ -35,6 +35,7 @@ class Product extends Component {
                     <ProductPhotos photos={photos.flat()} isFetching={isFetching} error={error} rightArrow={rightArrow} leftArrow={leftArrow}/>
                     <ProductInfo title={title} category={category} price={price} addToCart={this.props.addToCart} changeAmount={this.props.changeAmount}/>
                     </div>
+
                     <div className={'block-wrapper'}>
                     <div className={'block-menu-title'}><h3>You May Also Like</h3></div>
                     <ResponsiveSlider photos={similar_photos.flat()} links={similar_links.flat()}/>

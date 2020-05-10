@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import {Link} from "react-router-dom";
 
+
 class PageCategories extends Component {
     renderTemplate = () => {
         const {photos, isFetching, error, collections, cat_title, onChange} = this.props
@@ -14,11 +15,11 @@ class PageCategories extends Component {
         } else
             return (
                 <div className={'section'}>
-                    <div className={"PageCategory"}>
+                    <div>
                         <h2 className={"categories-title"}>{cat_title}</h2>
                         <div className={"categories-wrapper"}>
                             {photos.map((i, index) =>
-                                <div className={'item-coll'} key={index} onClick={()=> {onChange(collections[index])}}>
+                                <div key={index} onClick={()=> {onChange(collections[index])}}>
                                     {/*<Link to={`/item/${category_slugs[index]}`}>*/}
                                         <img src={i} className={'item-img'}/>
                                     {/*</Link>*/}

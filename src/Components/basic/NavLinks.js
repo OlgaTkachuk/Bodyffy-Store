@@ -59,6 +59,7 @@ class NavLinks extends Component {
                         </ul>
                     </div>
                 </nav>
+                {/*<div className={'divider-line-bold'}/>*/}
 
             </>
         );
