@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import InfiniteCarousel from 'react-leaf-carousel';
 import data from '../../../assets/data/slider_data1'
 import AliceCarousel from 'react-alice-carousel'
 import 'react-alice-carousel/lib/alice-carousel.css'

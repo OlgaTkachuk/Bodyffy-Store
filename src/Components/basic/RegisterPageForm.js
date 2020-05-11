@@ -99,7 +99,7 @@ class RegisterPageForm extends Component {
                                     </label>
                                 </div>
                                 <button type="submit" onSubmit={this.handleSubmit}
-                                        className="button-form">Зареєструватись
+                                        className="button-form greenblack-button">Зареєструватись
                                 </button>
                             </form>
                         </div>

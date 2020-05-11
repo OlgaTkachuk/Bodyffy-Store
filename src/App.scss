@@ -542,30 +542,6 @@ section {
   }
 }
 
-/*Footer*/
-footer {
-  margin-top: 1rem;
-
-}
-
-.footer {
-  text-align: center;
-  //background-color: $green;
-  background-color: rgba(211, 211, 211, 0.05);
-  height: 20vh;
-  margin-top: 3rem;
-  padding-top: 3rem;
-  border-top: 4px solid $green;
-
-}
-
-.footer p {
-  bottom: 10px;
-  font-size: 0.875rem;
-}
-
-
-
 
 
 .cat-block {
@@ -656,13 +632,14 @@ footer {
 }
 
 .button-form {
-  background-color: $green;
   padding: 19.5px 24px;
   color: $white;
   font-size: 0.875rem;
   text-decoration: none;
   text-align: center;
+
 }
+
 
 .item-block {
   display: flex;
@@ -714,11 +691,18 @@ footer {
 .item-page-button {
   width: 100%;
   //min-width: 300px;
+  background-color: $green;
   display: flex;
   justify-content: space-between;
   padding: 14px 20px;
   align-items: center;
   font-size: 1rem;
+  &:focus {
+    background-color: $green;
+  }
+  &:active {
+    background-color: $black;
+  }
 }
 
 .item-page-text {
@@ -733,122 +717,29 @@ footer {
   padding: 0 2vw 0 2vw;
 }
 
-.cart-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 1200px;
-  margin: auto;
-}
-
-.cart-block-wrapper {
-  flex: 60% 1;
-  padding: 20px 2rem;
-}
-
-.summary-wrapper {
-  flex: 30% 2;
-  margin: 1rem 2rem;
-}
-
-.checkout-form {
-  background-color: $white;
-  width: 400px;
-  padding: 30px;
-  margin-top: 20px;
-}
-
-@media screen and (max-width: 1024px) {
-  .summary-wrapper {
-    flex: 50%;
-    margin: 1rem auto;
-  }
-  .cart-block-wrapper {
-    flex: 50%;
-  }
-  .checkout-form {
-    width: 90vw;
-    margin: auto;
-  }
-}
-
-.cart-title {
-  border-bottom: 1px solid $black;
-  padding: 8px;
-  margin-bottom: 2rem;
-  font-size: 1.6rem;
-}
-
 
 .quantity-bar {
   display: flex;
   align-items: center;
   select {
-      
+    box-shadow: none;
+    border: none;
+    outline: none;
+    &:focus{
+      outline: none;
+      box-shadow: none;
+    }
+
+    option{
+      outline: none;
+      box-shadow: none;
+    }
   }
 }
 
-.checkout-button {
-  background-color: $black;
-  padding: 14px 20px;
-  font-size: 1rem;
-  width: 100%;
-}
 
-.checkout-button:hover {
-  background-color: $green;
-}
 
-.summary-title {
-  font-weight: 600;
-  margin-bottom: 2rem;
-}
 
-.total {
-  border-top: 1px solid $black;
-  display: flex;
-  justify-content: space-between;
-  padding-top: 10px;
-  margin-bottom: 1rem;
-}
-
-.subtotal {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 1rem;
-}
-
-.total-text {
-  font-weight: 600;
-}
-
-.small-text {
-  font-size: 0.875rem;
-  margin-bottom: 1rem;
-}
-
-.cart-img {
-  max-width: 200px;
-  margin-right: 2rem;
-}
-
-.cart-item-wrapper {
-  display: flex;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  border-bottom: 1px solid $black;
-
-}
-
-.cart-item-title {
-  font-size: 1.2rem;
-  margin-bottom: 20px;
-  display: inline-flex;
-  justify-content: space-between;
-}
-
-.cart-item-price {
-  margin-top: 75px;
-}
 
 .radio-form {
   display: inline-block;
@@ -864,13 +755,6 @@ footer {
   object-fit: cover;
 }
 
-.close-button {
-  max-width: 30px;
-  max-height: 30px;
-  margin: 20px;
-  position: relative;
-  right: 0;
-}
 
 .slider-wrapper {
   margin-top: 3rem;
@@ -907,4 +791,72 @@ footer {
     left: 5vw;
     bottom: 3vh;
   }
+}
+
+
+.greenblack-button {
+  background-color: $green;
+  &:active {
+    background-color: $black;
+  }
+}
+
+.order-form {
+  margin: 4rem auto;
+  p {
+    margin-bottom: 2rem;
+  }
+}
+
+
+/*Footer*/
+footer {
+  background-color: $white;
+  color: $gold;
+  margin-top: 3rem;
+}
+.footer {
+  text-align: center;
+  padding: 2rem 0;
+  border-top: 4px solid $black;
+  p {
+    font-size: 0.7rem;
+    position: relative;
+    bottom: 0;
+  }
+}
+.footer-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.footer-links {
+  margin-left: 10vw;
+  font-size: 0.875rem;
+  line-height: 1.6;
+  ul {
+    list-style-type: none;
+    text-align: left;
+    .link{
+      text-decoration: none;
+      color: $gold;
+    }
+  }
+}
+.footer-center {
+display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.footer-social {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.footer-rights {
+  font-size: 5px;
+}
+.footer-logo {
+  height: 40px;
+  margin-left: -5px;
 }

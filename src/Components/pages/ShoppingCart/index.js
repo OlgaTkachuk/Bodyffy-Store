@@ -4,7 +4,8 @@ import NavLinks from "../../basic/NavLinks";
 import Footer from "../../basic/Footer";
 import Cart from "../../basic/Cart";
 import Summary from "../../basic/Summary";
-import ResponsiveSlider from "../../basic/ResponsiveSlider/ResponsiveSlider";
+import cartimg from '../../../assets/images/add-to-cart.gif'
+import styles from './ShoppingCartStyle.scss'
 
 class ShoppingCart extends Component {
 
@@ -16,11 +17,17 @@ class ShoppingCart extends Component {
                 <NavLinks/>
                 {total ?
                     (<div className={'cart-wrapper'}>
-                        <Cart cart={cart} deleteFromCart={this.props.deleteFromCart} updateProductAmount={this.props.updateProductAmount}/>
+                        <Cart cart={cart} deleteFromCart={this.props.deleteFromCart}
+                              updateProductAmount={this.props.updateProductAmount}/>
                         <Summary total={total}/>
                     </div>)
                     :
-                    (<div>LOX</div>)
+                    (<div className={'empty-cart-page'}>
+                        <img src={cartimg} alt={''} className={'cart-gif'}></img>
+                        <div className={'empty-cart-title'}>
+                        <p>Ваш кошик порожній...</p>
+                        </div>
+                    </div>)
                 }
 
                 <Footer/>

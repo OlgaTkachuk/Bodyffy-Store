@@ -10,7 +10,7 @@ class RegisterBlock extends Component {
                 <p>If you are not registered yet, register here</p>
                 <br/>
                 <br/>
-                <NavLink exact to="/account/register" className="button-form">Реєстрація</NavLink>
+                <NavLink exact to="/account/register" className="button-form greenblack-button">Реєстрація</NavLink>
             </div>
         );
     }

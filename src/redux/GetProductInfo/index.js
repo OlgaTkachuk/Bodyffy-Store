@@ -22,7 +22,7 @@ export class ProductService {
             });
             const item = response.items.filter(item => item.fields.slug === product)
             const [itemToShow] = item;
-            let {category, title, price, photos, similarProductsPhotos = [], similarProductsLinks = []} = itemToShow.fields
+            let {category, title, price, photos,description, similarProductsPhotos = [], similarProductsLinks = []} = itemToShow.fields
 
             photos = photos?.map(image => image.fields.file.url);
             const similar_photos = similarProductsPhotos?.map(image => image.fields.file.url)
@@ -35,9 +35,10 @@ export class ProductService {
                 category,
                 price,
                 similar_photos,
-                similar_links
+                similar_links,
+                description
             }));
-            return {item, photos, title, category, price, similar_photos, similar_links};
+            return {item, photos, title, category, price, similar_photos, similar_links, description};
         } catch (err) {
             await dispatch(actions.getProductFail(err));
             return err;
