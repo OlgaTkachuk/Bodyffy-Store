@@ -1,0 +1,168 @@
+@import "src/App";
+
+.cart-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.cart-item-wrapper {
+  display: grid;
+  grid-template-columns: 2fr 3fr 1fr;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid $black;
+
+}
+
+
+cart-photo-wrapper {
+  flex: 30%;
+
+}
+
+cart-item-description-wrapper {
+  flex: 60%
+}
+
+cart-delete-button-wrapper {
+  flex: 10%;
+
+}
+
+.cart-img {
+  max-width: 200px;
+  margin-right: 2rem;
+}
+
+.cart-item-title {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  display: inline-flex;
+  justify-content: space-between;
+}
+
+.total {
+  border-top: 1px solid $black;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+  margin-bottom: 1rem;
+}
+
+.subtotal {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.total-text {
+  font-weight: 600;
+}
+
+
+.cart-item-price {
+  margin-top: 75px;
+}
+
+.close-button {
+  max-width: 25px;
+  max-height: 25px;
+  margin: 5px;
+  float: right;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+
+.empty-cart-title {
+  font-size: 2rem;
+  text-align: center;
+  margin: 1rem auto;
+  //height: 65vh;
+}
+
+.cart-gif {
+  height: 300px;
+  opacity: 0.1;
+}
+
+.empty-cart-page {
+  margin: 1rem auto 5rem;
+  text-align: center;
+}
+
+
+.cart-block-wrapper {
+  flex: 60% 1;
+  padding: 20px 2rem;
+}
+
+.summary-wrapper {
+  flex: 30% 2;
+  margin: 1rem 2rem;
+}
+
+.checkout-form {
+  background-color: $white;
+  width: 400px;
+  padding: 30px;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 1024px) {
+  .summary-wrapper {
+    flex: 50%;
+    margin: 1rem auto;
+  }
+  .cart-block-wrapper {
+    flex: 50%;
+  }
+  .checkout-form {
+    width: 90vw;
+    margin: auto;
+  }
+}
+
+.cart-title {
+  border-bottom: 1px solid $black;
+  padding: 8px;
+  margin-bottom: 2rem;
+  font-size: 1.6rem;
+}
+
+.button-wrapper {
+  text-decoration: none;
+}
+
+
+.checkout-button {
+  background-color: $black;
+  padding: 14px 20px;
+  //
+}
+
+.checkout-button:hover {
+  background-color: $green;
+}
+
+.summary-title {
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+
+.small-text {
+  font-size: 0.875rem;
+  margin-bottom: 1rem;
+}
+
+.plus-minus{
+  margin: 0 10px;
+  font-size: 1.6rem;
+  &:hover {
+    cursor: pointer;
+  }
+}

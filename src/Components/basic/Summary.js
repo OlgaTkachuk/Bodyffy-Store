@@ -17,7 +17,7 @@ class Summary extends Component {
                         <p className={'small-text total-text'}>Total</p>
                         <p className={'small-text total-text'}> ${this.props.total}</p>
                     </div>
-                    <NavLink to="/order" type={'submit'} className={'button-form checkout-button'}>Checkout</NavLink>
+                    <NavLink to="/order" type={'submit'} className={'button-wrapper'}> <div className={'button-form greenblack-button'}>Оформити</div></NavLink>
                 </form>
             </div>
         );

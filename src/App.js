@@ -10,6 +10,8 @@ import ProductPage from "./Containers/ProductPage/";
 import CategoryPage from "./Containers/CategoryPage/";
 import Home from "./Containers/HomePage/";
 import Order from "./Containers/OrderPage/";
+import About from "./Components/pages/AboutPage/";
+import Shipping from "./Components/pages/ShippingPage/";
 
 
 class App extends Component {
@@ -23,6 +25,8 @@ class App extends Component {
                 <Route exact path="/account/register" component={Register}/>
                 <Route exact path="/order" component={Order}/>
                 <Route exact path="/shoppingcart/:slug" component={ShoppingCart}/>
+                <Route exact path="/about" component={About}/>
+                <Route exact path="/shipping" component={Shipping}/>
                 <Route component={Error}/>
             </Switch>
         );

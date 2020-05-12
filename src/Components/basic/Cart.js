@@ -30,7 +30,7 @@ class Cart extends Component {
             cart.map((product) => {
                 return (
                     <div className={'cart-item-wrapper'}>
-                        <div>
+                        <div className={'cart-photo-wrapper'}>
                             <img src={product.photo} className={'cart-img'}/>
                         </div>
                         <div className={'cart-item-description-wrapper'}>
@@ -38,18 +38,20 @@ class Cart extends Component {
                                 <h3>{product.title}</h3>
                             </div>
                             <div className={"quantity-bar"}>
-                                <div onClick={this.handleMinus} id={product.productSlug}>-</div>
-                                <p>Quantity: {product.amount}</p>
-                                <div onClick={this.handlePlus} id={product.productSlug}>+</div>
+                                <p>Quantity:  </p>
+                                <div onClick={this.handleMinus} id={product.productSlug} className={'plus-minus'}>-</div>
+                                {product.amount}
+                                <div onClick={this.handlePlus} id={product.productSlug} className={'plus-minus'} >+</div>
                             </div>
                             <div className={'subtotal cart-item-price'}>
                                 <p className={'total-text'}>Price</p>
                                 <p className={'total-text'}>${product.price}</p>
                             </div>
                         </div>
+                        <div className={'cart-delete-button-wrapper'}>
                         <img src={close} className={'close-button'} alt={''} id={product.productSlug}
                              onClick={this.handleClick}/>
-
+                        </div>
                     </div>
                 )
             }))

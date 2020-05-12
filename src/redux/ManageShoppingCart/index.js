@@ -25,7 +25,7 @@ export class Cart {
         const amount = prodInfo.currentAmount;
         const photo = prodInfo.photos[0];
         const price = prodInfo.price
-        if (cart.findIndex(({productSlug}) => productSlug === productSlug) < 0) {
+        if (cart.findIndex(({productSlug: slug}) => slug === productSlug) < 0) {
             cart.push({
                 productSlug, title, photo, price, amount
             })

@@ -112,24 +112,28 @@ class OrderForm extends Component {
 
     render() {
         return (
-            <div>
+            <div className={'form-header-register order-form'}>
+                <p>Заповніть форму, щоб оформити замовлення:</p>
+
+            <div className={'register-wrapper-outer'}>
                 <form className="form-wrapper" onSubmit={this.handleSubmit}>
-                    <input type="text" required value={this.state.name} onChange={this.handleName}
+                    <input type="text" className={'input-field'} required value={this.state.name} onChange={this.handleName}
                            placeholder={'Name'}/>
-                    <input type="email" required value={this.state.email} placeholder={'email'}
+                    <input type="email" className={'input-field'} required value={this.state.email} placeholder={'email'}
                            onChange={this.handleEmail}/>
-                    <input type="text" required value={this.state.phone} placeholder={'phone'}
+                    <input type="text" className={'input-field'}  required value={this.state.phone} placeholder={'phone'}
                            onChange={this.handlePhone}/>
-                    <input type="text" value={this.state.city} onChange={this.handleCity}
+                    <input type="text" className={'input-field'} value={this.state.city} onChange={this.handleCity}
                            placeholder={'city'}/>
-                    <input onChange={this.handleShipping} placeholder={'shipping'}
+                    <input onChange={this.handleShipping} className={'input-field'} placeholder={'shipping'}
                            value={this.state.shipping}/>
-                    <input onChange={this.handleAddress} placeholder={'address'}
+                    <input onChange={this.handleAddress} className={'input-field'} placeholder={'address'}
                            value={this.state.address}/>
-                    <button type="submit" onSubmit={this.handleSubmit} className="button-dark button-form">
+                    <button type="submit" onSubmit={this.handleSubmit} className="button-form greenblack-button">
                         {'send order'}
                     </button>
                 </form>
+            </div>
             </div>
         );
     }
