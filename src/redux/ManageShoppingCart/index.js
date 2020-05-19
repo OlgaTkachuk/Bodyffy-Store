@@ -30,7 +30,7 @@ export class Cart {
                 productSlug, title, photo, price, amount
             })
         } else {
-            window.alert("OOOPS You've already added this product to your cart!")
+            window.alert("Здається Ви вже додали цей товар до кошика! Перейдіть, будь ласка, у кошик.")
         }
         let cartTotal = this.calculateTotal(cart)
         await dispatch(actions.addProductToCart({cart, cartTotal}))
