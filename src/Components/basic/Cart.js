@@ -60,7 +60,7 @@ class Cart extends Component {
     render() {
         return (
             <div className={'cart-block-wrapper'}>
-                <div className={'cart-title'}><h3>Your shopping bag</h3></div>
+                <div className={'cart-title'}><h4>Your shopping bag</h4></div>
                 {this.renderTemplate()}
             </div>
         );

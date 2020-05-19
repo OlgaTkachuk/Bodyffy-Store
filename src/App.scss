@@ -12,7 +12,7 @@ html {
   box-sizing: border-box;
   font-family: $font-basic;
   font-weight: 300;
-  //
+
   //background: #000 !important;
   //color: #0f0 !important;
   //outline: solid #f00 1px !important;
@@ -225,13 +225,11 @@ body {
   flex-direction: row;
   flex: 1;
   overflow-x: hidden;
+  &:hover input {
+    min-width: 250px;
+  }
 }
 
-.search-bar:hover input {
-  /*border-bottom: 1px solid #569EB6;*/
-  /*border-bottom: 1px solid #004731;*/
-  min-width: 250px;
-}
 
 .right-bar {
   display: flex;
@@ -244,7 +242,6 @@ body {
 .search-container {
   padding: auto;
   font-size: 1.5rem;
-
   input {
     margin-top: 10px;
     height: 30px;
@@ -254,6 +251,9 @@ body {
 
 .search-icon-container {
   margin: 15px 15px 0 15px;
+  @media screen and (max-width: 599px) {
+  margin: 25px 15px 0 15px;
+  }
 }
 
 @media screen and (max-width: 599px) {
@@ -263,9 +263,9 @@ body {
     margin-left: 20px;
   }
 
-  .right-bar {
-    display: none;
-  }
+  //.right-bar {
+  //  display: none;
+  //}
 
   .search-bar {
     flex: 1;
@@ -276,8 +276,6 @@ body {
   }
 
   .search-container input {
-    //border-bottom: 1px solid $green;
-    //transition: color 0.3s, background 0.3s;
     width: 60vw;
   }
 
@@ -365,9 +363,9 @@ button:hover {
 }
 
 @media screen and (max-width: 899px) {
-  .search-icon {
-    display: none;
-  }
+  //.search-icon {
+  //  display: none;
+  //}
 
   .search-bar-focus {
     margin-left: 5vw;
@@ -511,6 +509,9 @@ section {
 .slide-image {
   max-width: 28vw;
   max-height: 60vh;
+  @media screen and (max-width: 760px) {
+    width: 75vw;
+    max-width: 75vw;}
 }
 
 .back-arrow, .front-arrow {
@@ -534,9 +535,6 @@ section {
     padding-top: 16vh;
   }
 
-  .slide-image {
-    width: 75vw
-  }
   .slide-image-wider {
     width: 75vw;
   }
@@ -644,7 +642,8 @@ section {
 .item-block {
   display: flex;
   flex-wrap: wrap;
-  width: 100%;
+  width: 95%;
+  margin: auto;
   @media screen and (min-width: 721px){
     flex-wrap: nowrap;
   }
@@ -653,6 +652,7 @@ section {
 .photo-block {
   @media screen and (max-width: 720px) {
     flex: 100% 1;
+    padding: 0.5rem 0 0 3%;
   }
   @media screen and (max-width: 1099px) {
     flex: 45%;
@@ -715,6 +715,7 @@ section {
 .block-wrapper {
   margin: 3rem auto auto auto;
   padding: 0 2vw 0 2vw;
+
 }
 
 
@@ -806,11 +807,19 @@ section {
   p {
     margin-bottom: 2rem;
   }
+  @media screen and (max-width: 599px){
+    width: 90vw;
+    margin: 0.5rem auto;
+    p {
+      padding-left: 5vw;
+    }
+  }
 }
 
 
 /*Footer*/
 footer {
+
   background-color: $white;
   color: $gold;
   margin-top: 3rem;
@@ -828,6 +837,10 @@ footer {
 .footer-wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  @media screen and (max-width: 599px){
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fill, 300px);
+  }
 }
 
 .footer-links {
@@ -847,6 +860,7 @@ footer {
 display: flex;
   flex-direction: column;
   justify-content: flex-end;
+
 }
 .footer-social {
   display: flex;

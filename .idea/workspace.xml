@@ -2,30 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="873279fe-7677-414f-a44a-75f452ad5508" name="Default Changelist" comment="started making custom slider">
-      <change afterPath="$PROJECT_DIR$/src/Components/pages/AboutPage/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/pages/ShippingPage/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/pages/ShoppingCart/ShoppingCartStyle.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/add-to-cart.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/empty.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/logogold.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/basic/Cart.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/basic/Cart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/basic/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/basic/Footer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/basic/OrderForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/basic/OrderForm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/basic/ProductInfo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/basic/ProductInfo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/basic/RegisterBlock.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/basic/RegisterBlock.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/basic/RegisterPageForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/basic/RegisterPageForm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/basic/ResponsiveSlider/ResponsiveSlider.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/basic/ResponsiveSlider/ResponsiveSlider.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/basic/Summary.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/basic/Summary.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/pages/ProductPage/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/pages/ProductPage/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/pages/ShoppingCart/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/pages/ShoppingCart/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/GetProductInfo/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/GetProductInfo/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/GetProductInfo/reducers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/GetProductInfo/reducers.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/ManageShoppingCart/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/ManageShoppingCart/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/basic/PageCategories.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/basic/PageCategories.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/basic/RightBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/basic/RightBar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/pages/CategoryPage/CategoryPageStyle.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/pages/CategoryPage/CategoryPageStyle.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/pages/ShoppingCart/ShoppingCartStyle.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/pages/ShoppingCart/ShoppingCartStyle.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,17 +69,17 @@
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2020.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Programming\javascript\ss-store\src\assets\images" />
+      <recent name="E:\Programming\javascript\ss-store\src\images" />
+      <recent name="E:\Programming\javascript\ss-store\src" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\Programming\javascript\ss-store\src\Components\basic\ProductPhotos" />
       <recent name="E:\Programming\javascript\ss-store\src\Components\basic\ResponsiveSlider" />
       <recent name="E:\Programming\javascript\ss-store\src\Components\basic\" />
       <recent name="E:\Programming\javascript\ss-store\src\Components\basic" />
       <recent name="E:\Programming\javascript\ss-store\src\Components\pages\Signin" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\Programming\javascript\ss-store\src\assets\images" />
-      <recent name="E:\Programming\javascript\ss-store\src\images" />
-      <recent name="E:\Programming\javascript\ss-store\src" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -149,7 +132,10 @@
       <workItem from="1589143826463" duration="920000" />
       <workItem from="1589144798832" duration="3039000" />
       <workItem from="1589178881978" duration="6761000" />
-      <workItem from="1589189935929" duration="18913000" />
+      <workItem from="1589189935929" duration="20443000" />
+      <workItem from="1589284909134" duration="733000" />
+      <workItem from="1589443412366" duration="37000" />
+      <workItem from="1589796111932" duration="12125000" />
     </task>
     <task id="LOCAL-00001" summary="redux test">
       <created>1586365361016</created>
