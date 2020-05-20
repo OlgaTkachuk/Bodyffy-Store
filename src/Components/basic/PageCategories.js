@@ -19,10 +19,10 @@ class PageCategories extends Component {
                         <h2 className={"categories-title"}>{cat_title}</h2>
                         <div className={"categories-wrapper"}>
                             {photos.map((i, index) =>
-                                <div key={index} onClick={()=> {onChange(collections[index])}}>
-                                    {/*<Link to={`/item/${category_slugs[index]}`}>*/}
-                                        <img src={i} className={'item-img'}/>
-                                    {/*</Link>*/}
+                                <div key={index} onClick={() => {onChange(collections[index])}}>
+                                    <div>
+                                        <img src={i} className={'cat-img'}/>
+                                    </div>
                                 </div>
                             )}
                         </div>
@@ -30,11 +30,12 @@ class PageCategories extends Component {
                 </div>
             )
     }
+
     render() {
         return (
-        <section>
-            {this.renderTemplate()}
-        </section>
+            <section>
+                {this.renderTemplate()}
+            </section>
         )
     }
 }

@@ -13,18 +13,21 @@ class ProductInfo extends React.Component {
         this.props.changeAmount(event.target.value)
     }
     render() {
-        const {title, category, price, addToCart, description} = this.props
+        const {title, category, price, addToCart, description, availability} = this.props
         return (
             <div className={'descr-block'}>
                 <div>
                     <h1 className={'item-title'}>{title}</h1>
                 </div>
-                <div>
-                    <h1 className={'item-title'}>{category}</h1>
+                {/*<div>*/}
+                {/*    <h2 className={'item-title'}>{category}</h2>*/}
+                {/*</div>*/}
+                <div className={'item-page-text'}>
+                    <p >{availability? '✓ Є в наявності': '✕ Немає в наявності'}</p>
                 </div>
                 <br/>
                 <div className={"quantity-bar"}>
-                    <label>Quantity:
+                    <label>Кількість:
                         <select value={this.state.value} onChange={this.handleChange}>
                             <option value='1'>1</option>
                             <option value='2'>2</option>
@@ -46,7 +49,7 @@ class ProductInfo extends React.Component {
                     addToCart()
                 }}>
                     <h3 className={'item-page-price'}>{price} uah</h3>
-                    В корзину
+                    До кошика
                 </button>
 
                 <br/>

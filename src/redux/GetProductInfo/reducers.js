@@ -19,7 +19,8 @@ const initialState = {
     currentAmount: 1,
     similar_photos: [],
     similar_links: [],
-    description: ''
+    description: '',
+    availability: false
 }
 
 export function getProductsInfoReducer(state = initialState, action) {
@@ -38,6 +39,7 @@ export function getProductsInfoReducer(state = initialState, action) {
                 title: action.payload.title,
                 category: action.payload.category,
                 price: action.payload.price,
+                availability: action.payload.availability,
                 similar_photos: action.payload.similar_photos,
                 similar_links: action.payload.similar_links,
                 description: action.payload.description

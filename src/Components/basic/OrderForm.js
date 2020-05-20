@@ -11,37 +11,37 @@ class OrderForm extends Component {
             email: '',
             phone: '',
             city: '',
-            shipping: 'Nova Poshta',
-            address: '',
+            // shipping: 'Nova Poshta',
+            // address: '',
             cart: JSON.stringify(this.props.cart, null, 2),
             total: this.props.total
 
         }
 
-        this.handleShipping = this.handleShipping.bind(this);
+        // this.handleShipping = this.handleShipping.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
         this.handleName = this.handleName.bind(this);
         this.handleEmail = this.handleEmail.bind(this);
         this.handleCity = this.handleCity.bind(this);
         this.handlePhone = this.handlePhone.bind(this);
-        this.handleAddress = this.handleAddress.bind(this);
+        // this.handleAddress = this.handleAddress.bind(this);
     }
 
     componentDidMount() {
         console.log(this.props.cart);
     }
 
-    handleShipping(event) {
-        this.setState({
-            shipping: event.target.value
-        });
-    }
-
-    handleAddress(event) {
-        this.setState({
-            address: event.target.value
-        })
-    }
+    // handleShipping(event) {
+    //     this.setState({
+    //         shipping: event.target.value
+    //     });
+    // }
+    //
+    // handleAddress(event) {
+    //     this.setState({
+    //         address: event.target.value
+    //     })
+    // }
 
     handleName(event) {
         this.setState({
@@ -99,13 +99,13 @@ class OrderForm extends Component {
                 "name": this.state.name,
                 "city": this.state.city,
                 "phone": this.state.phone,
-                "shipping": this.state.shipping,
-                "address": this.state.address,
+                // "shipping": this.state.shipping,
+                // "address": this.state.address,
                 "cart": this.state.cart,
                 "total": this.state.total
             }, "user_HhA5epB1UYyjVtpzFdDan")
                 .then(res => {
-                    console.log("message sent")
+                    prompt("Дякуємо за замовлення! Наш менеджер невдовзі зв'яжеться з Вами.")
                 })
                 .catch(err => console.error('Failed to send feedback. Error: ', err));
     }
@@ -118,19 +118,20 @@ class OrderForm extends Component {
             <div className={'register-wrapper-outer'}>
                 <form className="form-wrapper" onSubmit={this.handleSubmit}>
                     <input type="text" className={'input-field'} required value={this.state.name} onChange={this.handleName}
-                           placeholder={'Name'}/>
-                    <input type="email" className={'input-field'} required value={this.state.email} placeholder={'email'}
+                           placeholder={"Ім'я"}/>
+                    <input type="email" className={'input-field'} value={this.state.email} placeholder={"email (необов'язково)"}
                            onChange={this.handleEmail}/>
-                    <input type="text" className={'input-field'}  required value={this.state.phone} placeholder={'phone'}
+                    <input type="text" className={'input-field'}  required value={this.state.phone} placeholder={'Телефон'}
                            onChange={this.handlePhone}/>
                     <input type="text" className={'input-field'} value={this.state.city} onChange={this.handleCity}
-                           placeholder={'city'}/>
-                    <input onChange={this.handleShipping} className={'input-field'} placeholder={'shipping'}
-                           value={this.state.shipping}/>
-                    <input onChange={this.handleAddress} className={'input-field'} placeholder={'address'}
-                           value={this.state.address}/>
+                           placeholder={'Місто'}/>
+                           <br/>
+                    {/*<input onChange={this.handleShipping} className={'input-field'} placeholder={'shipping'}*/}
+                    {/*       value={this.state.shipping}/>*/}
+                    {/*<input onChange={this.handleAddress} className={'input-field'} placeholder={'address'}*/}
+                    {/*       value={this.state.address}/>*/}
                     <button type="submit" onSubmit={this.handleSubmit} className="button-form greenblack-button">
-                        {'send order'}
+                        {'відправити'}
                     </button>
                 </form>
             </div>
